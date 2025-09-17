@@ -1111,6 +1111,37 @@ exports.locals = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/draggable-window/draggable-window.css":
+/*!*********************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/components/draggable-window/draggable-window.css ***!
+  \*********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".draggable-window_draggableWindow_2Ssr9 {\n    position: absolute;\n    background-color: #fff;\n    border: 1px solid #ddd;\n    border-radius: 8px;\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n    overflow: hidden;\n    display: flex;\n    flex-direction: column;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n\n.draggable-window_windowHeader_IPYmF {\n    background-color: #00BAAD;\n    color: white;\n    padding: 8px 12px;\n    cursor: move;\n    font-weight: bold;\n    font-size: 14px;\n    border-bottom: 1px solid #ddd;\n    display: flex;\n    align-items: center;\n}\n\n.draggable-window_windowHeader_IPYmF:hover {\n    background-color: #00998d;\n}\n\n.draggable-window_windowTitle_33hm6 {\n    flex: 1;\n}\n\n.draggable-window_windowContent_3Xq2i {\n    flex: 1;\n    overflow: auto;\n    position: relative;\n}\n\n.draggable-window_resizeHandleE_3R9h5,\n.draggable-window_resizeHandleS_SKbaf,\n.draggable-window_resizeHandleSE_1l8Vg {\n    position: absolute;\n    background: transparent;\n}\n\n.draggable-window_resizeHandleE_3R9h5 {\n    right: 0;\n    top: 0;\n    bottom: 0;\n    width: 4px;\n    cursor: ew-resize;\n}\n\n.draggable-window_resizeHandleS_SKbaf {\n    bottom: 0;\n    left: 0;\n    right: 0;\n    height: 4px;\n    cursor: ns-resize;\n}\n\n.draggable-window_resizeHandleSE_1l8Vg {\n    right: 0;\n    bottom: 0;\n    width: 12px;\n    height: 12px;\n    cursor: nwse-resize;\n}\n\n.draggable-window_resizeHandleE_3R9h5:hover,\n.draggable-window_resizeHandleS_SKbaf:hover,\n.draggable-window_resizeHandleSE_1l8Vg:hover {\n    background-color: rgba(0, 186, 173, 0.3);\n}\n\n.draggable-window_windowControls_3h3pg {\n    display: flex;\n    gap: 4px;\n}\n\n.draggable-window_controlButton_1hbjV {\n    background: none;\n    border: none;\n    color: white;\n    cursor: pointer;\n    font-size: 14px;\n    width: 20px;\n    height: 20px;\n    border-radius: 3px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.draggable-window_controlButton_1hbjV:hover {\n    background-color: rgba(255, 255, 255, 0.2);\n}\n\n.draggable-window_minimizedWindow_1_Af3 {\n    position: absolute;\n    width: 40px;\n    height: 40px;\n    background-color: #00BAAD;\n    color: white;\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-weight: bold;\n    font-size: 16px;\n    cursor: pointer;\n    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n\n.draggable-window_minimizedWindow_1_Af3:hover {\n    background-color: #00998d;\n    transform: scale(1.1);\n}", ""]);
+
+// exports
+exports.locals = {
+	"draggableWindow": "draggable-window_draggableWindow_2Ssr9",
+	"windowHeader": "draggable-window_windowHeader_IPYmF",
+	"windowTitle": "draggable-window_windowTitle_33hm6",
+	"windowContent": "draggable-window_windowContent_3Xq2i",
+	"resizeHandleE": "draggable-window_resizeHandleE_3R9h5",
+	"resizeHandleS": "draggable-window_resizeHandleS_SKbaf",
+	"resizeHandleSE": "draggable-window_resizeHandleSE_1l8Vg",
+	"resizeHandleSe": "draggable-window_resizeHandleSE_1l8Vg",
+	"windowControls": "draggable-window_windowControls_3h3pg",
+	"controlButton": "draggable-window_controlButton_1hbjV",
+	"minimizedWindow": "draggable-window_minimizedWindow_1_Af3"
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/filter/filter.css":
 /*!*************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/components/filter/filter.css ***!
@@ -2463,7 +2494,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/* overridden by src/lib/themes/guiHelpers.js */\n\n/*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/\n\n/* Toolbox z-index: 40; set in scratch-blocks */\n\n/* tooltips should go over add buttons if they overlap */\n\n/* monitors go over add buttons */\n\n/* \"ask\" block text input goes above monitors */\n\n/* menu-bar should go over monitors, alerts and tutorials */\n\n/* behind menu-bar */\n\n/* Block drag z-index: 1000; default 50 is overriden in blocks.css */\n\n/* so it is draggable into other panes */\n\n/* behind modals */\n\n/* behind modals */\n\n/* in most interfaces, the context menu is always on top */\n\n.stage-wrapper_stage-wrapper_2bejr {\n    position: relative;\n}\n\n.stage-wrapper_stage-wrapper_2bejr * {\n    box-sizing: border-box;\n}\n\n.stage-wrapper_stage-canvas-wrapper_3ewmd {\n    /* Hides negative space between edge of rounded corners + container, when selected */\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n\n.stage-wrapper_offset-controls_1TSoY .stage-wrapper_stage-canvas-wrapper_3ewmd {\n    padding-top: 44px;\n}\n\n.stage-wrapper_stage-wrapper_2bejr.stage-wrapper_full-screen_2hjMb {\n    position: fixed;\n    top: 2.75rem;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    z-index: 500;\n    background-color: var(--fullscreen-background);\n    /* spacing between stage and control bar (on the top), or between\n    stage and window edges (on left/right/bottom) */\n    padding: 0.1875rem;\n\n    /* this centers the stage */\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n.stage-wrapper_stage-wrapper_2bejr.stage-wrapper_embedded_10ZS6 {\n    background-color: transparent;\n}\n", ""]);
+exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/* overridden by src/lib/themes/guiHelpers.js */\n\n/*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/\n\n/* Toolbox z-index: 40; set in scratch-blocks */\n\n/* tooltips should go over add buttons if they overlap */\n\n/* monitors go over add buttons */\n\n/* \"ask\" block text input goes above monitors */\n\n/* menu-bar should go over monitors, alerts and tutorials */\n\n/* behind menu-bar */\n\n/* Block drag z-index: 1000; default 50 is overriden in blocks.css */\n\n/* so it is draggable into other panes */\n\n/* behind modals */\n\n/* behind modals */\n\n/* in most interfaces, the context menu is always on top */\n\n.stage-wrapper_stage-wrapper_2bejr {\n    position: relative;\n}\n\n.stage-wrapper_stage-wrapper_2bejr * {\n    box-sizing: border-box;\n}\n\n.stage-wrapper_stage-canvas-wrapper_3ewmd {\n    /* Hides negative space between edge of rounded corners + container, when selected */\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n\n.stage-wrapper_offset-controls_1TSoY .stage-wrapper_stage-canvas-wrapper_3ewmd {\n    padding-top: 44px;\n}\n\n.stage-wrapper_stage-wrapper_2bejr.stage-wrapper_full-screen_2hjMb {\n    position: fixed;\n    top: 2.75rem;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    z-index: 1000; /* Increased z-index for fullscreen mode */\n    background-color: var(--fullscreen-background);\n    /* spacing between stage and control bar (on the top), or between\n    stage and window edges (on left/right/bottom) */\n    padding: 0.1875rem;\n\n    /* this centers the stage */\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n.stage-wrapper_stage-wrapper_2bejr.stage-wrapper_embedded_10ZS6 {\n    background-color: transparent;\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -2590,7 +2621,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n.target-pane_target-pane_3S5E6 {\n    /* Makes columns for the sprite library selector + and the stage selector */\n    display: flex;\n    flex-direction: row;\n    flex-grow: 1;\n}\n\n.target-pane_stage-selector-wrapper_qekSW {\n    display: flex;\n    flex-basis: 72px;\n    flex-shrink: 0;\n}\n\n[dir=\"ltr\"] .target-pane_stage-selector-wrapper_qekSW {\n    margin-left: calc(0.5rem / 2);\n}\n\n[dir=\"rtl\"] .target-pane_stage-selector-wrapper_qekSW {\n    margin-right: calc(0.5rem / 2);\n}\n", ""]);
+exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n.target-pane_target-pane_3S5E6 {\n    /* Makes columns for the sprite library selector + and the stage selector */\n    display: flex;\n    flex-direction: row;\n    flex-grow: 1;\n    width: 100%;\n    height: 100%;\n    box-sizing: border-box;\n}\n\n.target-pane_stage-selector-wrapper_qekSW {\n    display: flex;\n    flex-basis: 72px;\n    flex-shrink: 0;\n}\n\n[dir=\"ltr\"] .target-pane_stage-selector-wrapper_qekSW {\n    margin-left: calc(0.5rem / 2);\n}\n\n[dir=\"rtl\"] .target-pane_stage-selector-wrapper_qekSW {\n    margin-right: calc(0.5rem / 2);\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -3300,6 +3331,111 @@ module.exports = "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http:/
 /***/ (function(module, exports) {
 
 module.exports = "<svg version=\"1.1\" width=\"2\" height=\"2\" viewBox=\"-1 -1 2 2\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <!-- Exported by Scratch - http://scratch.mit.edu/ -->\n</svg>"
+
+/***/ }),
+
+/***/ "./src/addons/contextmenu.js":
+/*!***********************************!*\
+  !*** ./src/addons/contextmenu.js ***!
+  \***********************************/
+/*! exports provided: addContextMenu */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addContextMenu", function() { return addContextMenu; });
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+// This file is imported from
+// https://github.com/ScratchAddons/ScratchAddons/blob/master/addon-api/content-script/contextmenu.js
+
+/* eslint-disable */
+
+let initialized = false;
+let hasDynamicContextMenu = false;
+let contextMenus = [];
+const onReactContextMenu = function onReactContextMenu(e) {
+  var _ctxTarget$this$traps0, _ctxTarget$this$traps1, _ctxTarget$this$traps10, _ctxTarget$this$traps11, _ctxTarget$this$traps12, _ctxTarget$this$traps13;
+  if (!e.target) return;
+  const ctxTarget = e.target.closest(".react-contextmenu-wrapper");
+  if (!ctxTarget) return;
+  let ctxMenu = ctxTarget.querySelector("nav.react-contextmenu");
+  let type;
+  const extra = {};
+  if (false) { var _ctxTarget$this$traps, _ctxTarget$this$traps2, _ctxTarget$this$traps3, _ctxTarget$this$traps4, _ctxTarget$this$traps5, _ctxTarget$this$traps6, _ctxTarget$this$traps7, _ctxTarget$this$traps8, _ctxTarget$this$traps9; } else if ((_ctxTarget$this$traps0 = ctxTarget[this.traps.getInternalKey(ctxTarget)]) !== null && _ctxTarget$this$traps0 !== void 0 && (_ctxTarget$this$traps1 = _ctxTarget$this$traps0.return) !== null && _ctxTarget$this$traps1 !== void 0 && (_ctxTarget$this$traps10 = _ctxTarget$this$traps1.return) !== null && _ctxTarget$this$traps10 !== void 0 && (_ctxTarget$this$traps11 = _ctxTarget$this$traps10.return) !== null && _ctxTarget$this$traps11 !== void 0 && (_ctxTarget$this$traps12 = _ctxTarget$this$traps11.stateNode) !== null && _ctxTarget$this$traps12 !== void 0 && (_ctxTarget$this$traps13 = _ctxTarget$this$traps12.props) !== null && _ctxTarget$this$traps13 !== void 0 && _ctxTarget$this$traps13.dragType) {
+    // SpriteSelectorItem which despite its name is used for costumes, sounds, backpacked script etc
+    const props = ctxTarget[this.traps.getInternalKey(ctxTarget)].return.return.return.stateNode.props;
+    type = props.dragType.toLowerCase();
+    extra.name = props.name;
+    extra.itemId = props.id;
+    extra.index = props.index;
+  } else {
+    return;
+  }
+  const ctx = _objectSpread({
+    menuItem: ctxMenu,
+    target: ctxTarget,
+    type
+  }, extra);
+  Array.from(ctxMenu.children).forEach(existing => {
+    if (existing.classList.contains("sa-ctx-menu")) existing.remove();
+  });
+  for (const item of hasDynamicContextMenu ? contextMenus.flatMap(menu => typeof menu === "function" ? menu(type, ctx) : menu) : contextMenus) {
+    if (!item) continue;
+    if (item.types && !item.types.some(itemType => type === itemType)) continue;
+    if (item.condition && !item.condition(ctx)) continue;
+    const itemElem = document.createElement("div");
+    const classes = ["context-menu_menu-item"];
+    if (item.border) classes.push("context-menu_menu-item-bordered");
+    if (item.dangerous) classes.push("context-menu_menu-item-danger");
+    itemElem.className = this.scratchClass(...classes, {
+      others: ["react-contextmenu-item", "sa-ctx-menu", item.className || ""]
+    });
+    const label = document.createElement("span");
+    label.textContent = item.label;
+    itemElem.append(label);
+    this.displayNoneWhileDisabled(itemElem, {
+      display: "block"
+    });
+    itemElem.addEventListener("click", e => {
+      e.stopPropagation();
+      window.dispatchEvent(new CustomEvent("REACT_CONTEXTMENU_HIDE", {
+        detail: {
+          action: "REACT_CONTEXTMENU_HIDE"
+        }
+      }));
+      item.callback(ctx);
+    });
+    this.appendToSharedSpace({
+      space: item.position,
+      order: item.order,
+      scope: ctxMenu,
+      element: itemElem
+    });
+  }
+  return;
+};
+const initialize = tab => {
+  if (initialized) return;
+  initialized = true;
+  document.body.addEventListener("contextmenu", e => onReactContextMenu.call(tab, e), {
+    capture: true
+  });
+};
+const addContextMenu = (tab, callback, opts) => {
+  if (typeof opts === "undefined") {
+    contextMenus.push(callback);
+    hasDynamicContextMenu = true;
+  } else {
+    contextMenus.push(_objectSpread(_objectSpread({}, opts), {}, {
+      callback
+    }));
+  }
+  initialize(tab);
+};
 
 /***/ }),
 
@@ -8476,6 +8612,390 @@ DragLayer.propTypes = {
 
 /***/ }),
 
+/***/ "./src/components/draggable-window/draggable-window.css":
+/*!**************************************************************!*\
+  !*** ./src/components/draggable-window/draggable-window.css ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./draggable-window.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/draggable-window/draggable-window.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/components/draggable-window/draggable-window.jsx":
+/*!**************************************************************!*\
+  !*** ./src/components/draggable-window/draggable-window.jsx ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _draggable_window_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./draggable-window.css */ "./src/components/draggable-window/draggable-window.css");
+/* harmony import */ var _draggable_window_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_draggable_window_css__WEBPACK_IMPORTED_MODULE_3__);
+const _excluded = ["children", "className", "defaultPosition", "defaultSize", "isDraggable", "isResizable", "minSize", "maxSize", "onDragStart", "onDrag", "onDragStop", "onResizeStart", "onResize", "onResizeStop", "onMinimizeToggle", "title", "windowId", "zIndex"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (-1 !== e.indexOf(n)) continue; t[n] = r[n]; } return t; }
+
+
+
+
+const DraggableWindow = props => {
+  const {
+      children,
+      className,
+      defaultPosition = {
+        x: 100,
+        y: 100
+      },
+      defaultSize = {
+        width: 400,
+        height: 300
+      },
+      isDraggable = true,
+      isResizable = true,
+      minSize = {
+        width: 200,
+        height: 150
+      },
+      maxSize = {
+        width: 800,
+        height: 600
+      },
+      onDragStart,
+      onDrag,
+      onDragStop,
+      onResizeStart,
+      onResize,
+      onResizeStop,
+      onMinimizeToggle,
+      title,
+      windowId,
+      zIndex = 1
+    } = props,
+    componentProps = _objectWithoutProperties(props, _excluded);
+  const [position, setPosition] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(defaultPosition);
+  const [size, setSize] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(defaultSize);
+  const [isDragging, setIsDragging] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(false);
+  const [isResizing, setIsResizing] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(false);
+  const [dragOffset, setDragOffset] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState({
+    x: 0,
+    y: 0
+  });
+  const [resizeHandle, setResizeHandle] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(null);
+  const [isMinimized, setIsMinimized] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(false);
+  const [isFullScreen, setIsFullScreen] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(false);
+  const [originalPosition, setOriginalPosition] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(defaultPosition);
+  const [originalSize, setOriginalSize] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(defaultSize);
+  const [isDraggingMinimized, setIsDraggingMinimized] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(false);
+  const [dragStartPosition, setDragStartPosition] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState({
+    x: 0,
+    y: 0
+  });
+  const windowRef = react__WEBPACK_IMPORTED_MODULE_1___default.a.useRef();
+  const headerRef = react__WEBPACK_IMPORTED_MODULE_1___default.a.useRef();
+  const handleMouseDown = react__WEBPACK_IMPORTED_MODULE_1___default.a.useCallback(e => {
+    if (!isDraggable) return;
+    const rect = windowRef.current.getBoundingClientRect();
+    setDragOffset({
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top
+    });
+    setIsDragging(true);
+    onDragStart && onDragStart(windowId, position);
+    e.preventDefault();
+    e.stopPropagation();
+  }, [isDraggable, onDragStart, windowId, position]);
+  const handleMouseMove = react__WEBPACK_IMPORTED_MODULE_1___default.a.useCallback(e => {
+    if (isDragging) {
+      const newX = e.clientX - dragOffset.x;
+      const newY = e.clientY - dragOffset.y;
+
+      // Constrain to viewport
+      const constrainedX = Math.max(0, Math.min(window.innerWidth - size.width, newX));
+      const constrainedY = Math.max(0, Math.min(window.innerHeight - size.height, newY));
+      const newPosition = {
+        x: constrainedX,
+        y: constrainedY
+      };
+      setPosition(newPosition);
+      onDrag && onDrag(windowId, newPosition);
+    } else if (isResizing && resizeHandle) {
+      const rect = windowRef.current.getBoundingClientRect();
+      let newWidth = size.width;
+      let newHeight = size.height;
+      switch (resizeHandle) {
+        case 'e':
+          newWidth = Math.max(minSize.width, Math.min(maxSize.width, e.clientX - rect.left));
+          break;
+        case 's':
+          newHeight = Math.max(minSize.height, Math.min(maxSize.height, e.clientY - rect.top));
+          break;
+        case 'se':
+          newWidth = Math.max(minSize.width, Math.min(maxSize.width, e.clientX - rect.left));
+          newHeight = Math.max(minSize.height, Math.min(maxSize.height, e.clientY - rect.top));
+          break;
+        default:
+          break;
+      }
+      const newSize = {
+        width: newWidth,
+        height: newHeight
+      };
+      setSize(newSize);
+      onResize && onResize(windowId, newSize);
+    }
+  }, [isDragging, isResizing, resizeHandle, dragOffset, size, minSize, maxSize, onDrag, onResize, windowId]);
+  const handleMouseUp = react__WEBPACK_IMPORTED_MODULE_1___default.a.useCallback(() => {
+    if (isDragging) {
+      setIsDragging(false);
+      onDragStop && onDragStop(windowId, position);
+    }
+    if (isResizing) {
+      setIsResizing(false);
+      setResizeHandle(null);
+      onResizeStop && onResizeStop(windowId, size);
+    }
+  }, [isDragging, isResizing, onDragStop, onResizeStop, windowId, position, size]);
+  const handleResizeMouseDown = react__WEBPACK_IMPORTED_MODULE_1___default.a.useCallback((handle, e) => {
+    if (!isResizable || isMinimized) return;
+    setIsResizing(true);
+    setResizeHandle(handle);
+    onResizeStart && onResizeStart(windowId, size);
+    e.preventDefault();
+    e.stopPropagation();
+  }, [isResizable, isMinimized, onResizeStart, windowId, size]);
+  const handleToggleMinimize = react__WEBPACK_IMPORTED_MODULE_1___default.a.useCallback(() => {
+    if (!isDraggingMinimized) {
+      if (isMinimized) {
+        // Restore window
+        setPosition(originalPosition);
+        setSize(originalSize);
+        setIsMinimized(false);
+        onMinimizeToggle && onMinimizeToggle(windowId, false);
+      } else {
+        // Minimize window
+        setOriginalPosition(position);
+        setOriginalSize(size);
+        setPosition({
+          x: window.innerWidth - 60,
+          y: window.innerHeight - 60
+        });
+        setSize({
+          width: 40,
+          height: 40
+        });
+        setIsMinimized(true);
+        setIsFullScreen(false);
+        onMinimizeToggle && onMinimizeToggle(windowId, true);
+      }
+    }
+    setIsDraggingMinimized(false);
+  }, [isMinimized, isDraggingMinimized, originalPosition, originalSize, position, size, onMinimizeToggle, windowId]);
+  const handleToggleFullScreen = react__WEBPACK_IMPORTED_MODULE_1___default.a.useCallback(() => {
+    if (isFullScreen) {
+      // Restore window
+      setPosition(originalPosition);
+      setSize(originalSize);
+      setIsFullScreen(false);
+    } else {
+      // Full screen
+      setOriginalPosition(position);
+      setOriginalSize(size);
+      setPosition({
+        x: 50,
+        y: 50
+      });
+      setSize({
+        width: window.innerWidth - 100,
+        height: window.innerHeight - 100
+      });
+      setIsFullScreen(true);
+      setIsMinimized(false);
+    }
+  }, [isFullScreen, originalPosition, originalSize, position, size]);
+  const handleClose = react__WEBPACK_IMPORTED_MODULE_1___default.a.useCallback(() => {
+    // Hide the window
+    setPosition({
+      x: -1000,
+      y: -1000
+    });
+    setIsMinimized(false);
+    setIsFullScreen(false);
+  }, []);
+  react__WEBPACK_IMPORTED_MODULE_1___default.a.useEffect(() => {
+    if (isDragging || isResizing) {
+      document.addEventListener('mousemove', handleMouseMove);
+      document.addEventListener('mouseup', handleMouseUp);
+      return () => {
+        document.removeEventListener('mousemove', handleMouseMove);
+        document.removeEventListener('mouseup', handleMouseUp);
+      };
+    }
+  }, [isDragging, isResizing, handleMouseMove, handleMouseUp]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", _extends({
+    ref: windowRef,
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_draggable_window_css__WEBPACK_IMPORTED_MODULE_3___default.a.draggableWindow, className),
+    style: {
+      left: position.x,
+      top: position.y,
+      width: size.width,
+      height: size.height,
+      zIndex
+    }
+  }, componentProps), isMinimized ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: _draggable_window_css__WEBPACK_IMPORTED_MODULE_3___default.a.minimizedWindow,
+    onClick: handleToggleMinimize,
+    onMouseDown: e => {
+      setDragStartPosition({
+        x: e.clientX,
+        y: e.clientY
+      });
+      handleMouseDown(e);
+    },
+    onMouseMove: e => {
+      if (isDragging) {
+        const dx = Math.abs(e.clientX - dragStartPosition.x);
+        const dy = Math.abs(e.clientY - dragStartPosition.y);
+        if (dx > 5 || dy > 5) {
+          setIsDraggingMinimized(true);
+        }
+      }
+    },
+    title: "Restore ".concat(title)
+  }, title === 'Stage' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
+    width: "20",
+    height: "20",
+    viewBox: "0 0 20 20",
+    fill: "white"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("rect", {
+    x: "2",
+    y: "2",
+    width: "16",
+    height: "16",
+    rx: "2",
+    stroke: "white",
+    strokeWidth: "1",
+    fill: "none"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("rect", {
+    x: "6",
+    y: "6",
+    width: "8",
+    height: "8",
+    fill: "white"
+  })) : title === 'Sprites' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
+    width: "20",
+    height: "20",
+    viewBox: "0 0 20 20",
+    fill: "white"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("circle", {
+    cx: "10",
+    cy: "6",
+    r: "3",
+    fill: "white"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("circle", {
+    cx: "5",
+    cy: "12",
+    r: "2.5",
+    fill: "white"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("circle", {
+    cx: "15",
+    cy: "12",
+    r: "2.5",
+    fill: "white"
+  })) : title.charAt(0)) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    ref: headerRef,
+    className: _draggable_window_css__WEBPACK_IMPORTED_MODULE_3___default.a.windowHeader,
+    onMouseDown: handleMouseDown,
+    onDoubleClick: handleToggleMinimize
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: _draggable_window_css__WEBPACK_IMPORTED_MODULE_3___default.a.windowTitle
+  }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: _draggable_window_css__WEBPACK_IMPORTED_MODULE_3___default.a.windowControls
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    className: _draggable_window_css__WEBPACK_IMPORTED_MODULE_3___default.a.controlButton,
+    onClick: handleToggleMinimize,
+    title: "Minimize"
+  }, "\u2212"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    className: _draggable_window_css__WEBPACK_IMPORTED_MODULE_3___default.a.controlButton,
+    onClick: handleToggleFullScreen,
+    title: "Full Screen"
+  }, "\u25A1"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: _draggable_window_css__WEBPACK_IMPORTED_MODULE_3___default.a.windowContent
+  }, children)), isResizable && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: _draggable_window_css__WEBPACK_IMPORTED_MODULE_3___default.a.resizeHandleE,
+    onMouseDown: e => handleResizeMouseDown('e', e)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: _draggable_window_css__WEBPACK_IMPORTED_MODULE_3___default.a.resizeHandleS,
+    onMouseDown: e => handleResizeMouseDown('s', e)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: _draggable_window_css__WEBPACK_IMPORTED_MODULE_3___default.a.resizeHandleSE,
+    onMouseDown: e => handleResizeMouseDown('se', e)
+  })));
+};
+DraggableWindow.propTypes = {
+  children: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.node,
+  className: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string,
+  defaultPosition: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.shape({
+    x: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.number,
+    y: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.number
+  }),
+  defaultSize: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.shape({
+    width: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.number,
+    height: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.number
+  }),
+  isDraggable: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.bool,
+  isResizable: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.bool,
+  minSize: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.shape({
+    width: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.number,
+    height: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.number
+  }),
+  maxSize: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.shape({
+    width: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.number,
+    height: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.number
+  }),
+  onDragStart: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
+  onDrag: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
+  onDragStop: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
+  onResizeStart: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
+  onResize: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
+  onResizeStop: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
+  onMinimizeToggle: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
+  title: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string.isRequired,
+  windowId: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string.isRequired,
+  zIndex: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.number
+};
+/* harmony default export */ __webpack_exports__["default"] = (DraggableWindow);
+
+/***/ }),
+
 /***/ "./src/components/filter/filter.css":
 /*!******************************************!*\
   !*** ./src/components/filter/filter.css ***!
@@ -8956,48 +9476,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var scratch_vm__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! scratch-vm */ "./node_modules/scratch-vm/src/index.js");
 /* harmony import */ var scratch_vm__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(scratch_vm__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _containers_blocks_jsx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../containers/blocks.jsx */ "./src/containers/blocks.jsx");
-/* harmony import */ var _containers_costume_tab_jsx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../containers/costume-tab.jsx */ "./src/containers/costume-tab.jsx");
-/* harmony import */ var _containers_target_pane_jsx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../containers/target-pane.jsx */ "./src/containers/target-pane.jsx");
-/* harmony import */ var _containers_sound_tab_jsx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../containers/sound-tab.jsx */ "./src/containers/sound-tab.jsx");
-/* harmony import */ var _containers_stage_wrapper_jsx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../containers/stage-wrapper.jsx */ "./src/containers/stage-wrapper.jsx");
-/* harmony import */ var _loader_loader_jsx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../loader/loader.jsx */ "./src/components/loader/loader.jsx");
-/* harmony import */ var _box_box_jsx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../box/box.jsx */ "./src/components/box/box.jsx");
-/* harmony import */ var _menu_bar_menu_bar_jsx__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../menu-bar/menu-bar.jsx */ "./src/components/menu-bar/menu-bar.jsx");
-/* harmony import */ var _containers_costume_library_jsx__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../containers/costume-library.jsx */ "./src/containers/costume-library.jsx");
-/* harmony import */ var _containers_backdrop_library_jsx__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../containers/backdrop-library.jsx */ "./src/containers/backdrop-library.jsx");
-/* harmony import */ var _containers_watermark_jsx__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../containers/watermark.jsx */ "./src/containers/watermark.jsx");
-/* harmony import */ var _containers_backpack_jsx__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../../containers/backpack.jsx */ "./src/containers/backpack.jsx");
-/* harmony import */ var _browser_modal_browser_modal_jsx__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../browser-modal/browser-modal.jsx */ "./src/components/browser-modal/browser-modal.jsx");
-/* harmony import */ var _containers_tips_library_jsx__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../../containers/tips-library.jsx */ "./src/containers/tips-library.jsx");
-/* harmony import */ var _containers_cards_jsx__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../../containers/cards.jsx */ "./src/containers/cards.jsx");
-/* harmony import */ var _containers_alerts_jsx__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../../containers/alerts.jsx */ "./src/containers/alerts.jsx");
-/* harmony import */ var _containers_drag_layer_jsx__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../../containers/drag-layer.jsx */ "./src/containers/drag-layer.jsx");
-/* harmony import */ var _containers_connection_modal_jsx__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../../containers/connection-modal.jsx */ "./src/containers/connection-modal.jsx");
-/* harmony import */ var _telemetry_modal_telemetry_modal_jsx__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../telemetry-modal/telemetry-modal.jsx */ "./src/components/telemetry-modal/telemetry-modal.jsx");
-/* harmony import */ var _containers_tw_username_modal_jsx__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../../containers/tw-username-modal.jsx */ "./src/containers/tw-username-modal.jsx");
-/* harmony import */ var _containers_tw_settings_modal_jsx__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../../containers/tw-settings-modal.jsx */ "./src/containers/tw-settings-modal.jsx");
-/* harmony import */ var _containers_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../../containers/tw-security-manager.jsx */ "./src/containers/tw-security-manager.jsx");
-/* harmony import */ var _containers_tw_custom_extension_modal_jsx__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../../containers/tw-custom-extension-modal.jsx */ "./src/containers/tw-custom-extension-modal.jsx");
-/* harmony import */ var _containers_tw_restore_point_manager_jsx__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../../containers/tw-restore-point-manager.jsx */ "./src/containers/tw-restore-point-manager.jsx");
-/* harmony import */ var _containers_tw_fonts_modal_jsx__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../../containers/tw-fonts-modal.jsx */ "./src/containers/tw-fonts-modal.jsx");
-/* harmony import */ var _containers_tw_unknown_platform_modal_jsx__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../../containers/tw-unknown-platform-modal.jsx */ "./src/containers/tw-unknown-platform-modal.jsx");
-/* harmony import */ var _containers_tw_invalid_project_modal_jsx__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../../containers/tw-invalid-project-modal.jsx */ "./src/containers/tw-invalid-project-modal.jsx");
-/* harmony import */ var _lib_layout_constants__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../../lib/layout-constants */ "./src/lib/layout-constants.js");
-/* harmony import */ var _lib_screen_utils__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../../lib/screen-utils */ "./src/lib/screen-utils.js");
-/* harmony import */ var _lib_themes__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../../lib/themes */ "./src/lib/themes/index.js");
-/* harmony import */ var _lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../../lib/tw-environment-support-prober */ "./src/lib/tw-environment-support-prober.js");
-/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./gui.css */ "./src/components/gui/gui.css");
-/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_41___default = /*#__PURE__*/__webpack_require__.n(_gui_css__WEBPACK_IMPORTED_MODULE_41__);
-/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./icon--extensions.svg */ "./src/components/gui/icon--extensions.svg");
-/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_42___default = /*#__PURE__*/__webpack_require__.n(_icon_extensions_svg__WEBPACK_IMPORTED_MODULE_42__);
-/* harmony import */ var _lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--code.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--code.svg");
-/* harmony import */ var _lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--costumes.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--costumes.svg");
-/* harmony import */ var _lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--sounds.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--sounds.svg");
+/* harmony import */ var _draggable_window_draggable_window_jsx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../draggable-window/draggable-window.jsx */ "./src/components/draggable-window/draggable-window.jsx");
+/* harmony import */ var _containers_blocks_jsx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../containers/blocks.jsx */ "./src/containers/blocks.jsx");
+/* harmony import */ var _containers_costume_tab_jsx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../containers/costume-tab.jsx */ "./src/containers/costume-tab.jsx");
+/* harmony import */ var _containers_target_pane_jsx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../containers/target-pane.jsx */ "./src/containers/target-pane.jsx");
+/* harmony import */ var _containers_sound_tab_jsx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../containers/sound-tab.jsx */ "./src/containers/sound-tab.jsx");
+/* harmony import */ var _containers_stage_wrapper_jsx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../containers/stage-wrapper.jsx */ "./src/containers/stage-wrapper.jsx");
+/* harmony import */ var _loader_loader_jsx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../loader/loader.jsx */ "./src/components/loader/loader.jsx");
+/* harmony import */ var _box_box_jsx__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../box/box.jsx */ "./src/components/box/box.jsx");
+/* harmony import */ var _menu_bar_menu_bar_jsx__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../menu-bar/menu-bar.jsx */ "./src/components/menu-bar/menu-bar.jsx");
+/* harmony import */ var _containers_costume_library_jsx__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../containers/costume-library.jsx */ "./src/containers/costume-library.jsx");
+/* harmony import */ var _containers_backdrop_library_jsx__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../containers/backdrop-library.jsx */ "./src/containers/backdrop-library.jsx");
+/* harmony import */ var _containers_watermark_jsx__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../../containers/watermark.jsx */ "./src/containers/watermark.jsx");
+/* harmony import */ var _containers_backpack_jsx__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../../containers/backpack.jsx */ "./src/containers/backpack.jsx");
+/* harmony import */ var _browser_modal_browser_modal_jsx__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../browser-modal/browser-modal.jsx */ "./src/components/browser-modal/browser-modal.jsx");
+/* harmony import */ var _containers_tips_library_jsx__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../../containers/tips-library.jsx */ "./src/containers/tips-library.jsx");
+/* harmony import */ var _containers_cards_jsx__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../../containers/cards.jsx */ "./src/containers/cards.jsx");
+/* harmony import */ var _containers_alerts_jsx__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../../containers/alerts.jsx */ "./src/containers/alerts.jsx");
+/* harmony import */ var _containers_drag_layer_jsx__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../../containers/drag-layer.jsx */ "./src/containers/drag-layer.jsx");
+/* harmony import */ var _containers_connection_modal_jsx__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../../containers/connection-modal.jsx */ "./src/containers/connection-modal.jsx");
+/* harmony import */ var _telemetry_modal_telemetry_modal_jsx__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../telemetry-modal/telemetry-modal.jsx */ "./src/components/telemetry-modal/telemetry-modal.jsx");
+/* harmony import */ var _containers_tw_username_modal_jsx__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../../containers/tw-username-modal.jsx */ "./src/containers/tw-username-modal.jsx");
+/* harmony import */ var _containers_tw_settings_modal_jsx__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../../containers/tw-settings-modal.jsx */ "./src/containers/tw-settings-modal.jsx");
+/* harmony import */ var _containers_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../../containers/tw-security-manager.jsx */ "./src/containers/tw-security-manager.jsx");
+/* harmony import */ var _containers_tw_custom_extension_modal_jsx__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../../containers/tw-custom-extension-modal.jsx */ "./src/containers/tw-custom-extension-modal.jsx");
+/* harmony import */ var _containers_tw_restore_point_manager_jsx__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../../containers/tw-restore-point-manager.jsx */ "./src/containers/tw-restore-point-manager.jsx");
+/* harmony import */ var _containers_tw_fonts_modal_jsx__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../../containers/tw-fonts-modal.jsx */ "./src/containers/tw-fonts-modal.jsx");
+/* harmony import */ var _containers_tw_unknown_platform_modal_jsx__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../../containers/tw-unknown-platform-modal.jsx */ "./src/containers/tw-unknown-platform-modal.jsx");
+/* harmony import */ var _containers_tw_invalid_project_modal_jsx__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../../containers/tw-invalid-project-modal.jsx */ "./src/containers/tw-invalid-project-modal.jsx");
+/* harmony import */ var _lib_layout_constants__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../../lib/layout-constants */ "./src/lib/layout-constants.js");
+/* harmony import */ var _lib_screen_utils__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../../lib/screen-utils */ "./src/lib/screen-utils.js");
+/* harmony import */ var _lib_themes__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../../lib/themes */ "./src/lib/themes/index.js");
+/* harmony import */ var _lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../../lib/tw-environment-support-prober */ "./src/lib/tw-environment-support-prober.js");
+/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./gui.css */ "./src/components/gui/gui.css");
+/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_42___default = /*#__PURE__*/__webpack_require__.n(_gui_css__WEBPACK_IMPORTED_MODULE_42__);
+/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./icon--extensions.svg */ "./src/components/gui/icon--extensions.svg");
+/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_43___default = /*#__PURE__*/__webpack_require__.n(_icon_extensions_svg__WEBPACK_IMPORTED_MODULE_43__);
+/* harmony import */ var _lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--code.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--code.svg");
+/* harmony import */ var _lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--costumes.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--costumes.svg");
+/* harmony import */ var _lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--sounds.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--sounds.svg");
 const _excluded = ["accountNavOpen", "activeTabIndex", "alertsVisible", "authorId", "authorThumbnailUrl", "authorUsername", "basePath", "backdropLibraryVisible", "backpackHost", "backpackVisible", "blocksId", "blocksTabVisible", "cardsVisible", "canChangeLanguage", "canChangeTheme", "canCreateNew", "canEditTitle", "canManageFiles", "canRemix", "canSave", "canCreateCopy", "canShare", "canUseCloud", "children", "connectionModalVisible", "costumeLibraryVisible", "costumesTabVisible", "customStageSize", "enableCommunity", "intl", "isCreating", "isEmbedded", "isFullScreen", "isPlayerOnly", "isRtl", "isShared", "isWindowFullScreen", "isTelemetryEnabled", "isTotallyNormal", "loading", "logo", "renderLogin", "onClickAbout", "onClickAccountNav", "onCloseAccountNav", "onClickAddonSettings", "onClickDesktopSettings", "onClickNewWindow", "onClickPackager", "onLogOut", "onOpenRegistration", "onToggleLoginOpen", "onActivateCostumesTab", "onActivateSoundsTab", "onActivateTab", "onClickLogo", "onExtensionButtonClick", "onOpenCustomExtensionModal", "onProjectTelemetryEvent", "onRequestCloseBackdropLibrary", "onRequestCloseCostumeLibrary", "onRequestCloseTelemetryModal", "onSeeCommunity", "onShare", "onShowPrivacyPolicy", "onStartSelectingFileUpload", "onTelemetryModalCancel", "onTelemetryModalOptIn", "onTelemetryModalOptOut", "securityManager", "showComingSoon", "showOpenFilePicker", "showSaveFilePicker", "soundsTabVisible", "stageSizeMode", "targetIsStage", "telemetryModalVisible", "theme", "tipsLibraryVisible", "usernameModalVisible", "settingsModalVisible", "customExtensionModalVisible", "fontsModalVisible", "unknownPlatformModalVisible", "invalidProjectModalVisible", "vm"];
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
 function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (-1 !== e.indexOf(n)) continue; t[n] = r[n]; } return t; }
+
 
 
 
@@ -9152,48 +9674,66 @@ const GUIComponent = props => {
       vm
     } = _omit,
     componentProps = _objectWithoutProperties(_omit, _excluded);
+  const [stageWindowPosition, setStageWindowPosition] = react__WEBPACK_IMPORTED_MODULE_3___default.a.useState({
+    x: 100,
+    y: 100
+  });
+  const [stageWindowSize, setStageWindowSize] = react__WEBPACK_IMPORTED_MODULE_3___default.a.useState({
+    width: 480,
+    height: 360
+  });
+  const [stageWindowMinimized, setStageWindowMinimized] = react__WEBPACK_IMPORTED_MODULE_3___default.a.useState(false);
+  const [targetPaneWindowPosition, setTargetPaneWindowPosition] = react__WEBPACK_IMPORTED_MODULE_3___default.a.useState({
+    x: 600,
+    y: 100
+  });
+  const [targetPaneWindowSize, setTargetPaneWindowSize] = react__WEBPACK_IMPORTED_MODULE_3___default.a.useState({
+    width: 240,
+    height: 360
+  });
+  const [targetPaneWindowMinimized, setTargetPaneWindowMinimized] = react__WEBPACK_IMPORTED_MODULE_3___default.a.useState(false);
   if (children) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], componentProps, children);
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], componentProps, children);
   }
   const tabClassNames = {
-    tabs: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.tabs,
-    tab: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTab, _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.tab),
-    tabList: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabList, _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.tabList),
-    tabPanel: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanel, _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.tabPanel),
-    tabPanelSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanelSelected, _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.isSelected),
-    tabSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabSelected, _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.isSelected)
+    tabs: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.tabs,
+    tab: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTab, _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.tab),
+    tabList: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabList, _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.tabList),
+    tabPanel: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanel, _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.tabPanel),
+    tabPanelSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanelSelected, _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.isSelected),
+    tabSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabSelected, _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.isSelected)
   };
-  const unconstrainedWidth = _lib_layout_constants__WEBPACK_IMPORTED_MODULE_37__["UNCONSTRAINED_NON_STAGE_WIDTH"] + _lib_layout_constants__WEBPACK_IMPORTED_MODULE_37__["FIXED_WIDTH"] + Math.max(0, customStageSize.width - _lib_layout_constants__WEBPACK_IMPORTED_MODULE_37__["FIXED_WIDTH"]);
+  const unconstrainedWidth = _lib_layout_constants__WEBPACK_IMPORTED_MODULE_38__["UNCONSTRAINED_NON_STAGE_WIDTH"] + _lib_layout_constants__WEBPACK_IMPORTED_MODULE_38__["FIXED_WIDTH"] + Math.max(0, customStageSize.width - _lib_layout_constants__WEBPACK_IMPORTED_MODULE_38__["FIXED_WIDTH"]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_responsive__WEBPACK_IMPORTED_MODULE_6___default.a, {
     minWidth: unconstrainedWidth
   }, isUnconstrained => {
-    const stageSize = Object(_lib_screen_utils__WEBPACK_IMPORTED_MODULE_38__["resolveStageSize"])(stageSizeMode, isUnconstrained);
-    const alwaysEnabledModals = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_31__["default"], {
+    const stageSize = Object(_lib_screen_utils__WEBPACK_IMPORTED_MODULE_39__["resolveStageSize"])(stageSizeMode, isUnconstrained);
+    const alwaysEnabledModals = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_32__["default"], {
       securityManager: securityManager
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_restore_point_manager_jsx__WEBPACK_IMPORTED_MODULE_33__["default"], null), usernameModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_username_modal_jsx__WEBPACK_IMPORTED_MODULE_29__["default"], null), settingsModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_settings_modal_jsx__WEBPACK_IMPORTED_MODULE_30__["default"], null), customExtensionModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_custom_extension_modal_jsx__WEBPACK_IMPORTED_MODULE_32__["default"], null), fontsModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_fonts_modal_jsx__WEBPACK_IMPORTED_MODULE_34__["default"], null), unknownPlatformModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_unknown_platform_modal_jsx__WEBPACK_IMPORTED_MODULE_35__["default"], null), invalidProjectModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_invalid_project_modal_jsx__WEBPACK_IMPORTED_MODULE_36__["default"], null));
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_restore_point_manager_jsx__WEBPACK_IMPORTED_MODULE_34__["default"], null), usernameModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_username_modal_jsx__WEBPACK_IMPORTED_MODULE_30__["default"], null), settingsModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_settings_modal_jsx__WEBPACK_IMPORTED_MODULE_31__["default"], null), customExtensionModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_custom_extension_modal_jsx__WEBPACK_IMPORTED_MODULE_33__["default"], null), fontsModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_fonts_modal_jsx__WEBPACK_IMPORTED_MODULE_35__["default"], null), unknownPlatformModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_unknown_platform_modal_jsx__WEBPACK_IMPORTED_MODULE_36__["default"], null), invalidProjectModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_invalid_project_modal_jsx__WEBPACK_IMPORTED_MODULE_37__["default"], null));
     return isPlayerOnly ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, isWindowFullScreen ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.fullscreenBackground,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.fullscreenBackground,
       style: {
         backgroundColor: fullscreenBackgroundColor
       }
-    }) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_stage_wrapper_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], {
+    }) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_stage_wrapper_jsx__WEBPACK_IMPORTED_MODULE_15__["default"], {
       isFullScreen: isFullScreen,
       isEmbedded: isEmbedded,
-      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_40__["isRendererSupported"])(),
+      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_41__["isRendererSupported"])(),
       isRtl: isRtl,
       loading: loading,
-      stageSize: _lib_layout_constants__WEBPACK_IMPORTED_MODULE_37__["STAGE_SIZE_MODES"].full,
+      stageSize: _lib_layout_constants__WEBPACK_IMPORTED_MODULE_38__["STAGE_SIZE_MODES"].full,
       vm: vm
-    }, alertsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_alerts_jsx__WEBPACK_IMPORTED_MODULE_25__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.alertsContainer
-    }) : null), alwaysEnabledModals) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], _extends({
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.pageWrapper,
+    }, alertsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_alerts_jsx__WEBPACK_IMPORTED_MODULE_26__["default"], {
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.alertsContainer
+    }) : null), alwaysEnabledModals) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], _extends({
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.pageWrapper,
       dir: isRtl ? 'rtl' : 'ltr',
       style: {
         minWidth: 1024 + Math.max(0, customStageSize.width - 480),
         minHeight: 640 + Math.max(0, customStageSize.height - 360)
       }
-    }, componentProps), alwaysEnabledModals, telemetryModalVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_telemetry_modal_telemetry_modal_jsx__WEBPACK_IMPORTED_MODULE_28__["default"], {
+    }, componentProps), alwaysEnabledModals, telemetryModalVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_telemetry_modal_telemetry_modal_jsx__WEBPACK_IMPORTED_MODULE_29__["default"], {
       isRtl: isRtl,
       isTelemetryEnabled: isTelemetryEnabled,
       onCancel: onTelemetryModalCancel,
@@ -9201,25 +9741,25 @@ const GUIComponent = props => {
       onOptOut: onTelemetryModalOptOut,
       onRequestClose: onRequestCloseTelemetryModal,
       onShowPrivacyPolicy: onShowPrivacyPolicy
-    }) : null, loading ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_loader_loader_jsx__WEBPACK_IMPORTED_MODULE_15__["default"], {
+    }) : null, loading ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_loader_loader_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
       isFullScreen: true
-    }) : null, isCreating ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_loader_loader_jsx__WEBPACK_IMPORTED_MODULE_15__["default"], {
+    }) : null, isCreating ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_loader_loader_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
       isFullScreen: true,
       messageId: "gui.loader.creating"
-    }) : null, Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_40__["isBrowserSupported"])() ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_browser_modal_browser_modal_jsx__WEBPACK_IMPORTED_MODULE_22__["default"], {
+    }) : null, Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_41__["isBrowserSupported"])() ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_browser_modal_browser_modal_jsx__WEBPACK_IMPORTED_MODULE_23__["default"], {
       isRtl: isRtl,
       onClickDesktopSettings: onClickDesktopSettings
-    }), tipsLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tips_library_jsx__WEBPACK_IMPORTED_MODULE_23__["default"], null) : null, cardsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_cards_jsx__WEBPACK_IMPORTED_MODULE_24__["default"], null) : null, alertsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_alerts_jsx__WEBPACK_IMPORTED_MODULE_25__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.alertsContainer
-    }) : null, connectionModalVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_connection_modal_jsx__WEBPACK_IMPORTED_MODULE_27__["default"], {
+    }), tipsLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tips_library_jsx__WEBPACK_IMPORTED_MODULE_24__["default"], null) : null, cardsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_cards_jsx__WEBPACK_IMPORTED_MODULE_25__["default"], null) : null, alertsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_alerts_jsx__WEBPACK_IMPORTED_MODULE_26__["default"], {
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.alertsContainer
+    }) : null, connectionModalVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_connection_modal_jsx__WEBPACK_IMPORTED_MODULE_28__["default"], {
       vm: vm
-    }) : null, costumeLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_costume_library_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {
+    }) : null, costumeLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_costume_library_jsx__WEBPACK_IMPORTED_MODULE_19__["default"], {
       vm: vm,
       onRequestClose: onRequestCloseCostumeLibrary
-    }) : null, backdropLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_backdrop_library_jsx__WEBPACK_IMPORTED_MODULE_19__["default"], {
+    }) : null, backdropLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_backdrop_library_jsx__WEBPACK_IMPORTED_MODULE_20__["default"], {
       vm: vm,
       onRequestClose: onRequestCloseBackdropLibrary
-    }) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_menu_bar_menu_bar_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
+    }) : null, !isFullScreen && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_menu_bar_menu_bar_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {
       accountNavOpen: accountNavOpen,
       authorId: authorId,
       authorThumbnailUrl: authorThumbnailUrl,
@@ -9233,7 +9773,7 @@ const GUIComponent = props => {
       canRemix: canRemix,
       canSave: canSave,
       canShare: canShare,
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarPosition,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarPosition,
       enableCommunity: enableCommunity,
       isShared: isShared,
       isTotallyNormal: isTotallyNormal,
@@ -9257,12 +9797,12 @@ const GUIComponent = props => {
       onShare: onShare,
       onStartSelectingFileUpload: onStartSelectingFileUpload,
       onToggleLoginOpen: onToggleLoginOpen
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.bodyWrapper
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.flexWrapper
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.editorWrapper
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.bodyWrapper
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.flexWrapper
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.editorWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["Tabs"], {
       forceRenderTabPanel: true,
       className: tabClassNames.tabs,
@@ -9276,7 +9816,7 @@ const GUIComponent = props => {
       className: tabClassNames.tab
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
       draggable: false,
-      src: Object(_lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_43__["default"])()
+      src: Object(_lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_44__["default"])()
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
       defaultMessage: "Code",
       id: "gui.gui.codeTab"
@@ -9285,7 +9825,7 @@ const GUIComponent = props => {
       onClick: onActivateCostumesTab
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
       draggable: false,
-      src: Object(_lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_44__["default"])()
+      src: Object(_lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_45__["default"])()
     }), targetIsStage ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
       defaultMessage: "Backdrops",
       id: "gui.gui.backdropsTab"
@@ -9297,15 +9837,15 @@ const GUIComponent = props => {
       onClick: onActivateSoundsTab
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
       draggable: false,
-      src: Object(_lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_45__["default"])()
+      src: Object(_lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_46__["default"])()
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
       defaultMessage: "Sounds",
       id: "gui.gui.soundsTab"
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["TabPanel"], {
       className: tabClassNames.tabPanel
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.blocksWrapper
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_blocks_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.blocksWrapper
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_blocks_jsx__WEBPACK_IMPORTED_MODULE_11__["default"], {
       key: "".concat(blocksId, "/").concat(theme.id),
       canUseCloud: canUseCloud,
       grow: 1,
@@ -9317,42 +9857,72 @@ const GUIComponent = props => {
       onOpenCustomExtensionModal: onOpenCustomExtensionModal,
       theme: theme,
       vm: vm
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.extensionButtonContainer
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.extensionButtonContainer
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.extensionButton,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.extensionButton,
       title: intl.formatMessage(messages.addExtension),
       onClick: onExtensionButtonClick
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.extensionButtonIcon,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.extensionButtonIcon,
       draggable: false,
-      src: _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_42___default.a
-    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.watermark
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_watermark_jsx__WEBPACK_IMPORTED_MODULE_20__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["TabPanel"], {
+      src: _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_43___default.a
+    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.watermark
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_watermark_jsx__WEBPACK_IMPORTED_MODULE_21__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["TabPanel"], {
       className: tabClassNames.tabPanel
-    }, costumesTabVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_costume_tab_jsx__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    }, costumesTabVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_costume_tab_jsx__WEBPACK_IMPORTED_MODULE_12__["default"], {
       vm: vm
     }) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["TabPanel"], {
       className: tabClassNames.tabPanel
-    }, soundsTabVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_sound_tab_jsx__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    }, soundsTabVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_sound_tab_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], {
       vm: vm
-    }) : null)), backpackVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_backpack_jsx__WEBPACK_IMPORTED_MODULE_21__["default"], {
+    }) : null)), backpackVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_backpack_jsx__WEBPACK_IMPORTED_MODULE_22__["default"], {
       host: backpackHost
-    }) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.stageAndTargetWrapper, _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a[stageSize])
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_stage_wrapper_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], {
+    }) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_draggable_window_draggable_window_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      windowId: "stage",
+      title: "Stage",
+      defaultPosition: stageWindowPosition,
+      defaultSize: stageWindowSize,
+      minSize: {
+        width: 200,
+        height: 150
+      },
+      maxSize: {
+        width: window.innerWidth - 100,
+        height: window.innerHeight - 100
+      },
+      onDragStop: (id, position) => setStageWindowPosition(position),
+      onResizeStop: (id, size) => setStageWindowSize(size),
+      onMinimizeToggle: (id, minimized) => setStageWindowMinimized(minimized),
+      zIndex: 100
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_stage_wrapper_jsx__WEBPACK_IMPORTED_MODULE_15__["default"], {
       isFullScreen: isFullScreen,
-      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_40__["isRendererSupported"])(),
+      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_41__["isRendererSupported"])(),
       isRtl: isRtl,
       stageSize: stageSize,
       vm: vm
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.targetWrapper
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_target_pane_jsx__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_draggable_window_draggable_window_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      windowId: "targets",
+      title: "Sprites",
+      defaultPosition: targetPaneWindowPosition,
+      defaultSize: targetPaneWindowSize,
+      minSize: {
+        width: 200,
+        height: 200
+      },
+      maxSize: {
+        width: 600,
+        height: 800
+      },
+      onDragStop: (id, position) => setTargetPaneWindowPosition(position),
+      onResizeStop: (id, size) => setTargetPaneWindowSize(size),
+      onMinimizeToggle: (id, minimized) => setTargetPaneWindowMinimized(minimized),
+      zIndex: 90
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_target_pane_jsx__WEBPACK_IMPORTED_MODULE_13__["default"], {
       stageSize: stageSize,
       vm: vm
-    }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_drag_layer_jsx__WEBPACK_IMPORTED_MODULE_26__["default"], null));
+    }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_drag_layer_jsx__WEBPACK_IMPORTED_MODULE_27__["default"], null));
   });
 };
 GUIComponent.propTypes = {
@@ -9431,10 +10001,10 @@ GUIComponent.propTypes = {
   showOpenFilePicker: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
   showSaveFilePicker: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
   soundsTabVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-  stageSizeMode: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf(Object.keys(_lib_layout_constants__WEBPACK_IMPORTED_MODULE_37__["STAGE_SIZE_MODES"])),
+  stageSizeMode: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf(Object.keys(_lib_layout_constants__WEBPACK_IMPORTED_MODULE_38__["STAGE_SIZE_MODES"])),
   targetIsStage: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   telemetryModalVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-  theme: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.instanceOf(_lib_themes__WEBPACK_IMPORTED_MODULE_39__["Theme"]),
+  theme: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.instanceOf(_lib_themes__WEBPACK_IMPORTED_MODULE_40__["Theme"]),
   tipsLibraryVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   usernameModalVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   settingsModalVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
@@ -9465,7 +10035,7 @@ GUIComponent.defaultProps = {
   isTotallyNormal: false,
   loading: false,
   showComingSoon: false,
-  stageSizeMode: _lib_layout_constants__WEBPACK_IMPORTED_MODULE_37__["STAGE_SIZE_MODES"].large
+  stageSizeMode: _lib_layout_constants__WEBPACK_IMPORTED_MODULE_38__["STAGE_SIZE_MODES"].large
 };
 const mapStateToProps = state => ({
   customStageSize: state.scratchGui.customStageSize,
@@ -24126,36 +24696,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_blocks__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../lib/blocks */ "./src/lib/blocks.js");
 /* harmony import */ var scratch_vm__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! scratch-vm */ "./node_modules/scratch-vm/src/index.js");
 /* harmony import */ var scratch_vm__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(scratch_vm__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _lib_log_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../lib/log.js */ "./src/lib/log.js");
-/* harmony import */ var _prompt_jsx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./prompt.jsx */ "./src/containers/prompt.jsx");
-/* harmony import */ var _components_blocks_blocks_jsx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/blocks/blocks.jsx */ "./src/components/blocks/blocks.jsx");
-/* harmony import */ var _extension_library_jsx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./extension-library.jsx */ "./src/containers/extension-library.jsx");
-/* harmony import */ var _lib_libraries_extensions_index_jsx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../lib/libraries/extensions/index.jsx */ "./src/lib/libraries/extensions/index.jsx");
-/* harmony import */ var _custom_procedures_jsx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./custom-procedures.jsx */ "./src/containers/custom-procedures.jsx");
-/* harmony import */ var _lib_error_boundary_hoc_jsx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../lib/error-boundary-hoc.jsx */ "./src/lib/error-boundary-hoc.jsx");
-/* harmony import */ var _lib_layout_constants__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../lib/layout-constants */ "./src/lib/layout-constants.js");
-/* harmony import */ var _lib_drop_area_hoc_jsx__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../lib/drop-area-hoc.jsx */ "./src/lib/drop-area-hoc.jsx");
-/* harmony import */ var _lib_drag_constants__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../lib/drag-constants */ "./src/lib/drag-constants.js");
-/* harmony import */ var _lib_define_dynamic_block__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../lib/define-dynamic-block */ "./src/lib/define-dynamic-block.js");
-/* harmony import */ var _lib_themes__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../lib/themes */ "./src/lib/themes/index.js");
-/* harmony import */ var _lib_themes_blockHelpers__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../lib/themes/blockHelpers */ "./src/lib/themes/blockHelpers.js");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _reducers_toolbox__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../reducers/toolbox */ "./src/reducers/toolbox.js");
-/* harmony import */ var _reducers_color_picker__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../reducers/color-picker */ "./src/reducers/color-picker.js");
-/* harmony import */ var _reducers_modals__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../reducers/modals */ "./src/reducers/modals.js");
-/* harmony import */ var _reducers_custom_procedures__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../reducers/custom-procedures */ "./src/reducers/custom-procedures.js");
-/* harmony import */ var _reducers_connection_modal__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../reducers/connection-modal */ "./src/reducers/connection-modal.js");
-/* harmony import */ var _reducers_workspace_metrics__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../reducers/workspace-metrics */ "./src/reducers/workspace-metrics.js");
-/* harmony import */ var _reducers_time_travel__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../reducers/time-travel */ "./src/reducers/time-travel.js");
-/* harmony import */ var _reducers_editor_tab__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../reducers/editor-tab */ "./src/reducers/editor-tab.js");
-/* harmony import */ var _addons_hooks_js__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../addons/hooks.js */ "./src/addons/hooks.js");
-/* harmony import */ var _lib_tw_load_scratch_blocks_hoc_jsx__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../lib/tw-load-scratch-blocks-hoc.jsx */ "./src/lib/tw-load-scratch-blocks-hoc.jsx");
-/* harmony import */ var _lib_backpack_code_payload_js__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../lib/backpack/code-payload.js */ "./src/lib/backpack/code-payload.js");
-/* harmony import */ var _lib_tw_persistent_storage_js__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../lib/tw-persistent-storage.js */ "./src/lib/tw-persistent-storage.js");
+/* harmony import */ var _lib_block_disable_extensions__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../lib/block-disable-extensions */ "./src/lib/block-disable-extensions.js");
+/* harmony import */ var _lib_log_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../lib/log.js */ "./src/lib/log.js");
+/* harmony import */ var _prompt_jsx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./prompt.jsx */ "./src/containers/prompt.jsx");
+/* harmony import */ var _components_blocks_blocks_jsx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/blocks/blocks.jsx */ "./src/components/blocks/blocks.jsx");
+/* harmony import */ var _extension_library_jsx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./extension-library.jsx */ "./src/containers/extension-library.jsx");
+/* harmony import */ var _lib_libraries_extensions_index_jsx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../lib/libraries/extensions/index.jsx */ "./src/lib/libraries/extensions/index.jsx");
+/* harmony import */ var _custom_procedures_jsx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./custom-procedures.jsx */ "./src/containers/custom-procedures.jsx");
+/* harmony import */ var _lib_error_boundary_hoc_jsx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../lib/error-boundary-hoc.jsx */ "./src/lib/error-boundary-hoc.jsx");
+/* harmony import */ var _lib_layout_constants__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../lib/layout-constants */ "./src/lib/layout-constants.js");
+/* harmony import */ var _lib_drop_area_hoc_jsx__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../lib/drop-area-hoc.jsx */ "./src/lib/drop-area-hoc.jsx");
+/* harmony import */ var _lib_drag_constants__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../lib/drag-constants */ "./src/lib/drag-constants.js");
+/* harmony import */ var _lib_define_dynamic_block__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../lib/define-dynamic-block */ "./src/lib/define-dynamic-block.js");
+/* harmony import */ var _lib_themes__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../lib/themes */ "./src/lib/themes/index.js");
+/* harmony import */ var _lib_themes_blockHelpers__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../lib/themes/blockHelpers */ "./src/lib/themes/blockHelpers.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _reducers_toolbox__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../reducers/toolbox */ "./src/reducers/toolbox.js");
+/* harmony import */ var _reducers_color_picker__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../reducers/color-picker */ "./src/reducers/color-picker.js");
+/* harmony import */ var _reducers_modals__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../reducers/modals */ "./src/reducers/modals.js");
+/* harmony import */ var _reducers_custom_procedures__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../reducers/custom-procedures */ "./src/reducers/custom-procedures.js");
+/* harmony import */ var _reducers_connection_modal__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../reducers/connection-modal */ "./src/reducers/connection-modal.js");
+/* harmony import */ var _reducers_workspace_metrics__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../reducers/workspace-metrics */ "./src/reducers/workspace-metrics.js");
+/* harmony import */ var _reducers_time_travel__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../reducers/time-travel */ "./src/reducers/time-travel.js");
+/* harmony import */ var _reducers_editor_tab__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../reducers/editor-tab */ "./src/reducers/editor-tab.js");
+/* harmony import */ var _addons_hooks_js__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../addons/hooks.js */ "./src/addons/hooks.js");
+/* harmony import */ var _lib_tw_load_scratch_blocks_hoc_jsx__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../lib/tw-load-scratch-blocks-hoc.jsx */ "./src/lib/tw-load-scratch-blocks-hoc.jsx");
+/* harmony import */ var _lib_backpack_code_payload_js__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../lib/backpack/code-payload.js */ "./src/lib/backpack/code-payload.js");
+/* harmony import */ var _lib_tw_persistent_storage_js__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../lib/tw-persistent-storage.js */ "./src/lib/tw-persistent-storage.js");
 const _excluded = ["anyModalVisible", "canUseCloud", "customStageSize", "customProceduresVisible", "extensionLibraryVisible", "options", "stageSize", "vm", "isRtl", "isVisible", "onActivateColorPicker", "onOpenConnectionModal", "onOpenSoundRecorder", "onOpenCustomExtensionModal", "reduxOnOpenCustomExtensionModal", "updateToolboxState", "onActivateCustomProcedures", "onRequestCloseExtensionLibrary", "onRequestCloseCustomProcedures", "toolboxXML", "updateMetrics", "useCatBlocks", "workspaceMetrics"];
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
 function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (-1 !== e.indexOf(n)) continue; t[n] = r[n]; } return t; }
+
 
 
 
@@ -24222,15 +24794,15 @@ const addFunctionListener = (object, property, callback) => {
     return result;
   };
 };
-const DroppableBlocks = Object(_lib_drop_area_hoc_jsx__WEBPACK_IMPORTED_MODULE_17__["default"])([_lib_drag_constants__WEBPACK_IMPORTED_MODULE_18__["default"].BACKPACK_CODE])(_components_blocks_blocks_jsx__WEBPACK_IMPORTED_MODULE_11__["default"]);
+const DroppableBlocks = Object(_lib_drop_area_hoc_jsx__WEBPACK_IMPORTED_MODULE_18__["default"])([_lib_drag_constants__WEBPACK_IMPORTED_MODULE_19__["default"].BACKPACK_CODE])(_components_blocks_blocks_jsx__WEBPACK_IMPORTED_MODULE_12__["default"]);
 class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
   constructor(props) {
     super(props);
     this.ScratchBlocks = Object(_lib_blocks__WEBPACK_IMPORTED_MODULE_7__["default"])(props.vm, false);
     window.ScratchBlocks = this.ScratchBlocks;
-    _addons_hooks_js__WEBPACK_IMPORTED_MODULE_31__["default"].blockly = this.ScratchBlocks;
-    _addons_hooks_js__WEBPACK_IMPORTED_MODULE_31__["default"].blocklyCallbacks.forEach(i => i());
-    _addons_hooks_js__WEBPACK_IMPORTED_MODULE_31__["default"].blocklyCallbacks.length = [];
+    _addons_hooks_js__WEBPACK_IMPORTED_MODULE_32__["default"].blockly = this.ScratchBlocks;
+    _addons_hooks_js__WEBPACK_IMPORTED_MODULE_32__["default"].blocklyCallbacks.forEach(i => i());
+    _addons_hooks_js__WEBPACK_IMPORTED_MODULE_32__["default"].blocklyCallbacks.length = [];
     lodash_bindall__WEBPACK_IMPORTED_MODULE_0___default()(this, ['attachVM', 'detachVM', 'getToolboxXML', 'handleCategorySelected', 'handleConnectionModalStart', 'handleDrop', 'handleStatusButtonUpdate', 'handleOpenSoundRecorder', 'handlePromptStart', 'handlePromptCallback', 'handlePromptClose', 'handleCustomProceduresClose', 'onScriptGlowOn', 'onScriptGlowOff', 'onBlockGlowOn', 'onBlockGlowOff', 'handleMonitorsUpdate', 'handleExtensionAdded', 'handleBlocksInfoUpdate', 'onTargetsUpdate', 'onVisualReport', 'onWorkspaceUpdate', 'onWorkspaceMetricsChange', 'setBlocks', 'setLocale', 'handleEnableProcedureReturns']);
     this.ScratchBlocks.prompt = this.handlePromptStart;
     this.ScratchBlocks.statusButtonCallback = this.handleConnectionModalStart;
@@ -24265,7 +24837,7 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
       }
     }, Blocks.defaultOptions);
     this.workspace = this.ScratchBlocks.inject(this.blocks, workspaceConfig);
-    _addons_hooks_js__WEBPACK_IMPORTED_MODULE_31__["default"].blocklyWorkspace = this.workspace;
+    _addons_hooks_js__WEBPACK_IMPORTED_MODULE_32__["default"].blocklyWorkspace = this.workspace;
 
     // Register buttons under new callback keys for creating variables,
     // lists, and procedures from extensions.
@@ -24322,7 +24894,10 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
     for (const category of this.props.vm.runtime._blockInfo) {
       this.handleExtensionAdded(category);
     }
-    Object(_lib_tw_persistent_storage_js__WEBPACK_IMPORTED_MODULE_34__["gentlyRequestPersistentStorage"])();
+    Object(_lib_tw_persistent_storage_js__WEBPACK_IMPORTED_MODULE_35__["gentlyRequestPersistentStorage"])();
+
+    // Initialize block disable functionality
+    Object(_lib_block_disable_extensions__WEBPACK_IMPORTED_MODULE_9__["default"])(this.props.vm);
   }
   shouldComponentUpdate(nextProps, nextState) {
     return this.state.prompt !== nextState.prompt || this.props.isVisible !== nextProps.isVisible || this._renderedToolboxXML !== nextProps.toolboxXML || this.props.extensionLibraryVisible !== nextProps.extensionLibraryVisible || this.props.customProceduresVisible !== nextProps.customProceduresVisible || this.props.locale !== nextProps.locale || this.props.anyModalVisible !== nextProps.anyModalVisible || this.props.stageSize !== nextProps.stageSize || this.props.customStageSize !== nextProps.customStageSize;
@@ -24372,7 +24947,7 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
 
     // Clear the flyout blocks so that they can be recreated on mount.
     this.props.vm.clearFlyoutBlocks();
-    _addons_hooks_js__WEBPACK_IMPORTED_MODULE_31__["default"].blocklyWorkspace = null;
+    _addons_hooks_js__WEBPACK_IMPORTED_MODULE_32__["default"].blocklyWorkspace = null;
   }
   requestToolboxUpdate() {
     clearTimeout(this.toolboxUpdateTimeout);
@@ -24516,7 +25091,7 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
       const stageCostumes = stage.getCostumes();
       const targetCostumes = target.getCostumes();
       const targetSounds = target.getSounds();
-      const dynamicBlocksXML = Object(_lib_themes_blockHelpers__WEBPACK_IMPORTED_MODULE_21__["injectExtensionCategoryTheme"])(this.props.vm.runtime.getBlocksXML(target), this.props.theme);
+      const dynamicBlocksXML = Object(_lib_themes_blockHelpers__WEBPACK_IMPORTED_MODULE_22__["injectExtensionCategoryTheme"])(this.props.vm.runtime.getBlocksXML(target), this.props.theme);
       return Object(_lib_make_toolbox_xml__WEBPACK_IMPORTED_MODULE_3__["default"])(false, target.isStage, target.id, dynamicBlocksXML, targetCostumes[targetCostumes.length - 1].name, stageCostumes[stageCostumes.length - 1].name, targetSounds.length > 0 ? targetSounds[targetSounds.length - 1].name : '', this.props.theme.getBlockColors());
     } catch (_unused) {
       return null;
@@ -24550,7 +25125,7 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
       if (error.message) {
         error.message = "Workspace Update Error: ".concat(error.message);
       }
-      _lib_log_js__WEBPACK_IMPORTED_MODULE_9__["default"].error(error);
+      _lib_log_js__WEBPACK_IMPORTED_MODULE_10__["default"].error(error);
     }
     this.workspace.addChangeListener(this.props.vm.blockListener);
     if (this.props.vm.editingTarget && this.props.workspaceMetrics.targets[this.props.vm.editingTarget.id]) {
@@ -24597,7 +25172,7 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
           if (blockInfo.info && blockInfo.info.isDynamic) {
             dynamicBlocksInfo.push(blockInfo);
           } else if (blockInfo.json) {
-            staticBlocksJson.push(Object(_lib_themes_blockHelpers__WEBPACK_IMPORTED_MODULE_21__["injectExtensionBlockTheme"])(blockInfo.json, this.props.theme));
+            staticBlocksJson.push(Object(_lib_themes_blockHelpers__WEBPACK_IMPORTED_MODULE_22__["injectExtensionBlockTheme"])(blockInfo.json, this.props.theme));
           }
           // otherwise it's a non-block entry such as '---'
         });
@@ -24607,7 +25182,7 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
           // The factory should only know static info about the block: the category info and the opcode.
           // Anything else will be picked up from the XML attached to the block instance.
           const extendedOpcode = "".concat(categoryInfo.id, "_").concat(blockInfo.info.opcode);
-          const blockDefinition = Object(_lib_define_dynamic_block__WEBPACK_IMPORTED_MODULE_19__["default"])(this.ScratchBlocks, categoryInfo, blockInfo, extendedOpcode, this.props.theme);
+          const blockDefinition = Object(_lib_define_dynamic_block__WEBPACK_IMPORTED_MODULE_20__["default"])(this.ScratchBlocks, categoryInfo, blockInfo, extendedOpcode, this.props.theme);
           this.ScratchBlocks.Blocks[extendedOpcode] = blockDefinition;
         });
       }
@@ -24630,7 +25205,7 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
     this.handleExtensionAdded(categoryInfo);
   }
   handleCategorySelected(categoryId) {
-    const extension = _lib_libraries_extensions_index_jsx__WEBPACK_IMPORTED_MODULE_13__["default"].find(ext => ext.extensionId === categoryId);
+    const extension = _lib_libraries_extensions_index_jsx__WEBPACK_IMPORTED_MODULE_14__["default"].find(ext => ext.extensionId === categoryId);
     if (extension && extension.launchPeripheralConnectionFlow) {
       this.handleConnectionModalStart(categoryId);
     }
@@ -24690,7 +25265,7 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
   handleDrop(dragInfo) {
     fetch(dragInfo.payload.bodyUrl).then(response => response.json()).then(payload => {
       // based on https://github.com/ScratchAddons/ScratchAddons/pull/7028
-      const topBlock = Object(_lib_backpack_code_payload_js__WEBPACK_IMPORTED_MODULE_33__["findTopBlock"])(payload);
+      const topBlock = Object(_lib_backpack_code_payload_js__WEBPACK_IMPORTED_MODULE_34__["findTopBlock"])(payload);
       if (topBlock) {
         const metrics = this.props.workspaceMetrics.targets[this.props.vm.editingTarget.id];
         if (metrics) {
@@ -24752,7 +25327,7 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(DroppableBlocks, _extends({
       componentRef: this.setBlocks,
       onDrop: this.handleDrop
-    }, props)), this.state.prompt ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_prompt_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    }, props)), this.state.prompt ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_prompt_jsx__WEBPACK_IMPORTED_MODULE_11__["default"], {
       defaultValue: this.state.prompt.defaultValue,
       isStage: vm.runtime.getEditingTarget().isStage,
       showListMessage: this.state.prompt.varType === this.ScratchBlocks.LIST_VARIABLE_TYPE,
@@ -24763,13 +25338,13 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
       vm: vm,
       onCancel: this.handlePromptClose,
       onOk: this.handlePromptCallback
-    }) : null, extensionLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_extension_library_jsx__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    }) : null, extensionLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_extension_library_jsx__WEBPACK_IMPORTED_MODULE_13__["default"], {
       vm: vm,
       onCategorySelected: this.handleCategorySelected,
       onEnableProcedureReturns: this.handleEnableProcedureReturns,
       onRequestClose: onRequestCloseExtensionLibrary,
       onOpenCustomExtensionModal: onOpenCustomExtensionModal || reduxOnOpenCustomExtensionModal
-    }) : null, customProceduresVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_custom_procedures_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], {
+    }) : null, customProceduresVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_custom_procedures_jsx__WEBPACK_IMPORTED_MODULE_15__["default"], {
       options: {
         media: options.media
       },
@@ -24809,8 +25384,8 @@ Blocks.propTypes = {
     comments: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
     collapse: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool
   }),
-  stageSize: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf(Object.keys(_lib_layout_constants__WEBPACK_IMPORTED_MODULE_16__["STAGE_DISPLAY_SIZES"])).isRequired,
-  theme: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.instanceOf(_lib_themes__WEBPACK_IMPORTED_MODULE_20__["Theme"]),
+  stageSize: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf(Object.keys(_lib_layout_constants__WEBPACK_IMPORTED_MODULE_17__["STAGE_DISPLAY_SIZES"])).isRequired,
+  theme: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.instanceOf(_lib_themes__WEBPACK_IMPORTED_MODULE_21__["Theme"]),
   toolboxXML: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string,
   updateMetrics: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
   updateToolboxState: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
@@ -24824,7 +25399,7 @@ Blocks.defaultOptions = {
   zoom: {
     controls: true,
     wheel: true,
-    startScale: _lib_layout_constants__WEBPACK_IMPORTED_MODULE_16__["BLOCKS_DEFAULT_SCALE"]
+    startScale: _lib_layout_constants__WEBPACK_IMPORTED_MODULE_17__["BLOCKS_DEFAULT_SCALE"]
   },
   grid: {
     spacing: 40,
@@ -24838,7 +25413,7 @@ Blocks.defaultOptions = {
 Blocks.defaultProps = {
   isVisible: true,
   options: Blocks.defaultOptions,
-  theme: _lib_themes__WEBPACK_IMPORTED_MODULE_20__["Theme"].light
+  theme: _lib_themes__WEBPACK_IMPORTED_MODULE_21__["Theme"].light
 };
 const mapStateToProps = state => ({
   anyModalVisible: Object.keys(state.scratchGui.modals).some(key => state.scratchGui.modals[key]) || state.scratchGui.mode.isFullScreen,
@@ -24850,34 +25425,34 @@ const mapStateToProps = state => ({
   toolboxXML: state.scratchGui.toolbox.toolboxXML,
   customProceduresVisible: state.scratchGui.customProcedures.active,
   workspaceMetrics: state.scratchGui.workspaceMetrics,
-  useCatBlocks: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_29__["isTimeTravel2020"])(state)
+  useCatBlocks: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_30__["isTimeTravel2020"])(state)
 });
 const mapDispatchToProps = dispatch => ({
-  onActivateColorPicker: callback => dispatch(Object(_reducers_color_picker__WEBPACK_IMPORTED_MODULE_24__["activateColorPicker"])(callback)),
-  onActivateCustomProcedures: (data, callback) => dispatch(Object(_reducers_custom_procedures__WEBPACK_IMPORTED_MODULE_26__["activateCustomProcedures"])(data, callback)),
+  onActivateColorPicker: callback => dispatch(Object(_reducers_color_picker__WEBPACK_IMPORTED_MODULE_25__["activateColorPicker"])(callback)),
+  onActivateCustomProcedures: (data, callback) => dispatch(Object(_reducers_custom_procedures__WEBPACK_IMPORTED_MODULE_27__["activateCustomProcedures"])(data, callback)),
   onOpenConnectionModal: id => {
-    dispatch(Object(_reducers_connection_modal__WEBPACK_IMPORTED_MODULE_27__["setConnectionModalExtensionId"])(id));
-    dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_25__["openConnectionModal"])());
+    dispatch(Object(_reducers_connection_modal__WEBPACK_IMPORTED_MODULE_28__["setConnectionModalExtensionId"])(id));
+    dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_26__["openConnectionModal"])());
   },
   onOpenSoundRecorder: () => {
-    dispatch(Object(_reducers_editor_tab__WEBPACK_IMPORTED_MODULE_30__["activateTab"])(_reducers_editor_tab__WEBPACK_IMPORTED_MODULE_30__["SOUNDS_TAB_INDEX"]));
-    dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_25__["openSoundRecorder"])());
+    dispatch(Object(_reducers_editor_tab__WEBPACK_IMPORTED_MODULE_31__["activateTab"])(_reducers_editor_tab__WEBPACK_IMPORTED_MODULE_31__["SOUNDS_TAB_INDEX"]));
+    dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_26__["openSoundRecorder"])());
   },
-  reduxOnOpenCustomExtensionModal: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_25__["openCustomExtensionModal"])()),
+  reduxOnOpenCustomExtensionModal: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_26__["openCustomExtensionModal"])()),
   onRequestCloseExtensionLibrary: () => {
-    dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_25__["closeExtensionLibrary"])());
+    dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_26__["closeExtensionLibrary"])());
   },
   onRequestCloseCustomProcedures: data => {
-    dispatch(Object(_reducers_custom_procedures__WEBPACK_IMPORTED_MODULE_26__["deactivateCustomProcedures"])(data));
+    dispatch(Object(_reducers_custom_procedures__WEBPACK_IMPORTED_MODULE_27__["deactivateCustomProcedures"])(data));
   },
   updateToolboxState: toolboxXML => {
-    dispatch(Object(_reducers_toolbox__WEBPACK_IMPORTED_MODULE_23__["updateToolbox"])(toolboxXML));
+    dispatch(Object(_reducers_toolbox__WEBPACK_IMPORTED_MODULE_24__["updateToolbox"])(toolboxXML));
   },
   updateMetrics: metrics => {
-    dispatch(Object(_reducers_workspace_metrics__WEBPACK_IMPORTED_MODULE_28__["updateMetrics"])(metrics));
+    dispatch(Object(_reducers_workspace_metrics__WEBPACK_IMPORTED_MODULE_29__["updateMetrics"])(metrics));
   }
 });
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_intl__WEBPACK_IMPORTED_MODULE_6__["injectIntl"])(Object(_lib_error_boundary_hoc_jsx__WEBPACK_IMPORTED_MODULE_15__["default"])('Blocks')(Object(react_redux__WEBPACK_IMPORTED_MODULE_22__["connect"])(mapStateToProps, mapDispatchToProps)(Object(_lib_tw_load_scratch_blocks_hoc_jsx__WEBPACK_IMPORTED_MODULE_32__["default"])(Blocks)))));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_intl__WEBPACK_IMPORTED_MODULE_6__["injectIntl"])(Object(_lib_error_boundary_hoc_jsx__WEBPACK_IMPORTED_MODULE_16__["default"])('Blocks')(Object(react_redux__WEBPACK_IMPORTED_MODULE_23__["connect"])(mapStateToProps, mapDispatchToProps)(Object(_lib_tw_load_scratch_blocks_hoc_jsx__WEBPACK_IMPORTED_MODULE_33__["default"])(Blocks)))));
 
 /***/ }),
 
@@ -25510,7 +26085,7 @@ class CostumeTab extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component 
     }));
   }
   async handleNewBlankCostume() {
-    console.log("addcostume");
+    console.log('addcostume');
     function base64ToUint8Array(base64String) {
       const padding = '='.repeat((4 - base64String.length % 4) % 4);
       const base64 = (base64String + padding).replace(/\-/g, '+').replace(/_/g, '/');
@@ -25530,12 +26105,12 @@ class CostumeTab extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component 
       index: 1
     });
 
-    //const res =base64ToUint8Array('PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIwIiBoZWlnaHQ9IjAiIHZpZXdCb3g9IjAgMCAwIDAiPgogIDwhLS0gRXhwb3J0ZWQgYnkgU2NyYXRjaCAtIGh0dHA6Ly9zY3JhdGNoLm1pdC5lZHUvIC0tPgo8L3N2Zz4=');
-    //const blob = await res.blob();
+    // const res =base64ToUint8Array('PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIwIiBoZWlnaHQ9IjAiIHZpZXdCb3g9IjAgMCAwIDAiPgogIDwhLS0gRXhwb3J0ZWQgYnkgU2NyYXRjaCAtIGh0dHA6Ly9zY3JhdGNoLm1pdC5lZHUvIC0tPgo8L3N2Zz4=');
+    // const blob = await res.blob();
 
-    /*if (!(this._typeIsBitmap(blob.type) || blob.type === "image/svg+xml")) {
-      console.error(`Invalid MIME type: ${blob.type}`);
-      return;
+    /* if (!(this._typeIsBitmap(blob.type) || blob.type === "image/svg+xml")) {
+    console.error(`Invalid MIME type: ${blob.type}`);
+    return;
     }*/
     const assetType = runtime.storage.AssetType.ImageVector;
 
@@ -25544,12 +26119,12 @@ class CostumeTab extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component 
     // (https://github.com/scratchfoundation/scratch-parser/blob/665f05d739a202d565a4af70a201909393d456b2/lib/sb3_definitions.json#L51)
     const dataType = runtime.storage.DataFormat.SVG;
 
-    /*const arrayBuffer = await new Promise((resolve, reject) => {
-      const fr = new FileReader();
-      fr.onload = () => resolve(fr.result);
-      fr.onerror = () =>
-        reject(new Error(`Failed to read as array buffer: ${fr.error}`));
-      fr.readAsArrayBuffer(blob);
+    /* const arrayBuffer = await new Promise((resolve, reject) => {
+    const fr = new FileReader();
+    fr.onload = () => resolve(fr.result);
+    fr.onerror = () =>
+      reject(new Error(`Failed to read as array buffer: ${fr.error}`));
+    fr.readAsArrayBuffer(blob);
     });*/
 
     const asset = runtime.storage.createAsset(assetType, dataType, base64ToUint8Array('PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIwIiBoZWlnaHQ9IjAiIHZpZXdCb3g9IjAgMCAwIDAiPgogIDwhLS0gRXhwb3J0ZWQgYnkgU2NyYXRjaCAtIGh0dHA6Ly9zY3JhdGNoLm1pdC5lZHUvIC0tPgo8L3N2Zz4='), null, true);
@@ -25565,11 +26140,11 @@ class CostumeTab extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component 
     }
 
     /*
-      
-      const name = this.props.vm.editingTarget.isStage ?
-          this.props.intl.formatMessage(messages.backdrop, {index: 1}) :
-          this.props.intl.formatMessage(messages.costume, {index: 1});
-      this.handleNewCostume(emptyCostume(name));*/
+    
+    const name = this.props.vm.editingTarget.isStage ?
+        this.props.intl.formatMessage(messages.backdrop, {index: 1}) :
+        this.props.intl.formatMessage(messages.costume, {index: 1});
+    this.handleNewCostume(emptyCostume(name));*/
   }
   async handleSurpriseCostume() {
     const costumeLibraryContent = await Object(_lib_libraries_tw_async_libraries__WEBPACK_IMPORTED_MODULE_24__["getCostumeLibrary"])();
@@ -26526,408 +27101,408 @@ const fetchLibrary = async () => {
   // PenguinMod (本地数据，不需要fetch)
   Promise.resolve((() => {
     const data = {
-      "extensions": [{
-        name: "Pen+",
-        description: "Extended pen section! Adds blocks for drawing triangles using textures and tints, drawing images and editing their pixels, etc.",
-        code: "ObviousAlexC/PenPlus.js",
-        banner: "ObviousAlexC/PenPlus.svg",
-        creator: "pinksheep2917"
+      extensions: [{
+        name: 'Pen+',
+        description: 'Extended pen section! Adds blocks for drawing triangles using textures and tints, drawing images and editing their pixels, etc.',
+        code: 'ObviousAlexC/PenPlus.js',
+        banner: 'ObviousAlexC/PenPlus.svg',
+        creator: 'pinksheep2917'
       }, {
-        name: "Boxed Physics",
+        name: 'Boxed Physics',
         description: "Implements the Box2D physics engine into PenguinMod, adding joints, springs, etc. This is different from TurboWarp's implementation.",
-        code: "pooiod/Box2D.js",
-        banner: "pooiod/B2Dimg.svg",
-        creator: "pooiod7"
+        code: 'pooiod/Box2D.js',
+        banner: 'pooiod/B2Dimg.svg',
+        creator: 'pooiod7'
       }, {
-        name: "3D Math",
-        description: "A handful of utilities for making your own sprite-based 3D engine.",
-        code: "ObviousAlexC/3DMath.js",
-        banner: "ObviousAlexC/3DMath.svg",
-        creator: "pinksheep2917"
+        name: '3D Math',
+        description: 'A handful of utilities for making your own sprite-based 3D engine.',
+        code: 'ObviousAlexC/3DMath.js',
+        banner: 'ObviousAlexC/3DMath.svg',
+        creator: 'pinksheep2917'
       }, {
-        name: "GPU.sb3",
-        description: "Use WebGPU compute shaders to accelerate your projects.",
-        code: "derpygamer2142/gpusb3.js",
-        banner: "derpygamer2142/gpusb3.svg",
-        creator: "insanetaco2000",
-        creatorAlias: "derpygamer2142",
+        name: 'GPU.sb3',
+        description: 'Use WebGPU compute shaders to accelerate your projects.',
+        code: 'derpygamer2142/gpusb3.js',
+        banner: 'derpygamer2142/gpusb3.svg',
+        creator: 'insanetaco2000',
+        creatorAlias: 'derpygamer2142',
         isGitHub: false,
         unstable: true,
-        unstableReason: "WebGPU is still experimental and not supported by all browsers and does not work when packaged to electron. Check compatibility at webgpu.io."
+        unstableReason: 'WebGPU is still experimental and not supported by all browsers and does not work when packaged to electron. Check compatibility at webgpu.io.'
       }, {
-        name: "Object",
-        description: "Handle large JSON files at an extreme speed.",
-        code: "skyhigh173/object.js",
-        banner: "skyhigh173/object.svg",
-        creator: "skyhigh173",
+        name: 'Object',
+        description: 'Handle large JSON files at an extreme speed.',
+        code: 'skyhigh173/object.js',
+        banner: 'skyhigh173/object.svg',
+        creator: 'skyhigh173',
         isGitHub: true
       }, {
-        name: "Scope Variable",
-        description: "Manage your variables in a block-like structure.",
-        code: "0znzw/ScopeVars.js",
-        banner: "0znzw/ScopeVars.png",
-        creator: "yuri-kiss",
+        name: 'Scope Variable',
+        description: 'Manage your variables in a block-like structure.',
+        code: '0znzw/ScopeVars.js',
+        banner: '0znzw/ScopeVars.png',
+        creator: 'yuri-kiss',
         isGitHub: true,
         unstable: true,
-        unstableReason: "This extension uses unstable techniques that may not always work."
+        unstableReason: 'This extension uses unstable techniques that may not always work.'
       }, {
-        name: "Extra Timers",
-        description: "Allows for the creation and management of additional timer blocks.",
-        notes: "thumbnail by Dillon",
-        code: "steve0greatness/timers.js",
-        banner: "steve0greatness/timers.svg",
-        creator: "Steve0Greatness",
+        name: 'Extra Timers',
+        description: 'Allows for the creation and management of additional timer blocks.',
+        notes: 'thumbnail by Dillon',
+        code: 'steve0greatness/timers.js',
+        banner: 'steve0greatness/timers.svg',
+        creator: 'Steve0Greatness',
         isGitHub: true
       }, {
-        name: "Dictation",
-        description: "Convert your voice into text. (not supported in all browsers)",
-        code: "pooiod/Dictation.js",
-        banner: "pooiod/Dictation.svg",
-        creator: "pooiod7"
+        name: 'Dictation',
+        description: 'Convert your voice into text. (not supported in all browsers)',
+        code: 'pooiod/Dictation.js',
+        banner: 'pooiod/Dictation.svg',
+        creator: 'pooiod7'
       }, {
-        name: "Text To Speech: Redone",
-        description: "A better alternitive to the base text to speech extension. Powered by the TTStool API",
-        code: "PuzzlingGGG/ttsr.js",
-        banner: "PuzzlingGGG/TTSR.png",
-        creator: "PuzzlingGGG",
+        name: 'Text To Speech: Redone',
+        description: 'A better alternitive to the base text to speech extension. Powered by the TTStool API',
+        code: 'PuzzlingGGG/ttsr.js',
+        banner: 'PuzzlingGGG/TTSR.png',
+        creator: 'PuzzlingGGG',
         isGitHub: true
       }, {
-        name: "CloudLink",
-        description: "A powerful WebSocket extension for Scratch. Allows for online connectivity to servers for things like multiplayer.",
-        code: "MikeDev101/cloudlink.js",
-        banner: "MikeDev101/cloudlink.svg",
-        creator: "MikeDev101",
+        name: 'CloudLink',
+        description: 'A powerful WebSocket extension for Scratch. Allows for online connectivity to servers for things like multiplayer.',
+        code: 'MikeDev101/cloudlink.js',
+        banner: 'MikeDev101/cloudlink.svg',
+        creator: 'MikeDev101',
         isGitHub: true
       }, {
-        name: "E2EE",
-        description: "A general-purpose E2EE (End-to-End Encryption) extension for Scratch.",
-        code: "MikeDev101/e2ee.js",
-        banner: "MikeDev101/e2ee.svg",
-        creator: "MikeDev101",
+        name: 'E2EE',
+        description: 'A general-purpose E2EE (End-to-End Encryption) extension for Scratch.',
+        code: 'MikeDev101/e2ee.js',
+        banner: 'MikeDev101/e2ee.svg',
+        creator: 'MikeDev101',
         isGitHub: true
       }, {
-        name: "WebRTC",
-        description: "A barebones WebRTC implementation.",
-        code: "MikeDev101/webrtc.js",
-        banner: "MikeDev101/webrtc.svg",
-        creator: "MikeDev101",
+        name: 'WebRTC',
+        description: 'A barebones WebRTC implementation.',
+        code: 'MikeDev101/webrtc.js',
+        banner: 'MikeDev101/webrtc.svg',
+        creator: 'MikeDev101',
         isGitHub: true
       }, {
-        name: "Spritesheeter",
-        description: "Load and manipulate spritesheets with customizable frames and XML support",
-        code: "MubiLop/spritesheeter.js",
-        banner: "MubiLop/spritesheeter.png",
-        creator: "cicerorph",
-        creatorAlias: "MubiLop",
+        name: 'Spritesheeter',
+        description: 'Load and manipulate spritesheets with customizable frames and XML support',
+        code: 'MubiLop/spritesheeter.js',
+        banner: 'MubiLop/spritesheeter.png',
+        creator: 'cicerorph',
+        creatorAlias: 'MubiLop',
         isGitHub: true
       }, {
-        name: "Background Remover",
-        description: "Removes background from images.",
-        code: "dumzdev/removebg.js",
-        banner: "dumzdev/removebgbanner.svg",
-        creator: "dumzdev"
+        name: 'Background Remover',
+        description: 'Removes background from images.',
+        code: 'dumzdev/removebg.js',
+        banner: 'dumzdev/removebgbanner.svg',
+        creator: 'dumzdev'
       }, {
-        name: "PenguinAI",
-        description: "Talk to AI! Use Models like DALL-E-3, GPT, LLama, Claude, and more!",
-        code: "MubiLop/penguingpt.js",
-        banner: "MubiLop/penguingpt.png",
-        creator: "cicerorph",
-        creatorAlias: "MubiLop",
+        name: 'PenguinAI',
+        description: 'Talk to AI! Use Models like DALL-E-3, GPT, LLama, Claude, and more!',
+        code: 'MubiLop/penguingpt.js',
+        banner: 'MubiLop/penguingpt.png',
+        creator: 'cicerorph',
+        creatorAlias: 'MubiLop',
         isGitHub: true,
         unstable: true,
-        documentation: "PenguinAI",
-        unstableReason: "AI models can generate unintended or inappropriate output.\nSome AI models may also become temporarily inaccessible.\n\nUse at your own risk."
+        documentation: 'PenguinAI',
+        unstableReason: 'AI models can generate unintended or inappropriate output.\nSome AI models may also become temporarily inaccessible.\n\nUse at your own risk.'
       }, {
-        name: "Block AI",
-        description: "An AI powered chat bot to help you code in your projects.",
-        code: "TheShovel/blockAI.js",
-        banner: "TheShovel/thumbnail-blockAI.png",
-        creator: "TheShovel",
-        creatorAlias: "TheShovel",
+        name: 'Block AI',
+        description: 'An AI powered chat bot to help you code in your projects.',
+        code: 'TheShovel/blockAI.js',
+        banner: 'TheShovel/thumbnail-blockAI.png',
+        creator: 'TheShovel',
+        creatorAlias: 'TheShovel',
         isGitHub: true,
         unstable: true,
-        unstableReason: "The AI model can generate inaccurate output and broken syntax!"
+        unstableReason: 'The AI model can generate inaccurate output and broken syntax!'
       }, {
-        name: "PenguinHook",
-        description: "Send Webhook requests, that can be Discord or any type of webhook.",
-        code: "MubiLop/penguinhook.js",
-        banner: "MubiLop/penguinhook.png",
-        creator: "cicerorph",
-        creatorAlias: "MubiLop",
+        name: 'PenguinHook',
+        description: 'Send Webhook requests, that can be Discord or any type of webhook.',
+        code: 'MubiLop/penguinhook.js',
+        banner: 'MubiLop/penguinhook.png',
+        creator: 'cicerorph',
+        creatorAlias: 'MubiLop',
         isGitHub: true
       }, {
-        name: "Number Utilities",
-        description: "Adds blocks for number formatting and manipulation.",
-        code: "MubiLop/numutils.js",
-        banner: "MubiLop/numutils.png",
-        creator: "cicerorph",
-        creatorAlias: "MubiLop",
-        notes: "Art made by hazel",
-        documentation: "NumberUtilities",
+        name: 'Number Utilities',
+        description: 'Adds blocks for number formatting and manipulation.',
+        code: 'MubiLop/numutils.js',
+        banner: 'MubiLop/numutils.png',
+        creator: 'cicerorph',
+        creatorAlias: 'MubiLop',
+        notes: 'Art made by hazel',
+        documentation: 'NumberUtilities',
         isGitHub: true
       }, {
-        name: "Mathematics",
-        description: "Complicated maths extension for nerds.",
-        code: "jwklong/mathematics.js",
-        banner: "jwklong/mathematics.png",
-        creator: "jwklong",
+        name: 'Mathematics',
+        description: 'Complicated maths extension for nerds.',
+        code: 'jwklong/mathematics.js',
+        banner: 'jwklong/mathematics.png',
+        creator: 'jwklong',
         isGitHub: true
       }, {
-        name: "Big Decimal",
-        description: "High precision operations. (Support decimals)",
-        code: "qxsck/big-decimal.js",
-        banner: "qxsck/big-decimal.svg",
-        creator: "qxsck",
+        name: 'Big Decimal',
+        description: 'High precision operations. (Support decimals)',
+        code: 'qxsck/big-decimal.js',
+        banner: 'qxsck/big-decimal.svg',
+        creator: 'qxsck',
         isGitHub: true
       }, {
-        name: "Format Numbers",
-        description: "Format large numbers into AD standard, fixed decimal, comma separated, or scientific notation.",
-        code: "DogeisCut/FormatNumbers.js",
-        banner: "DogeisCut/FormatNumbers.png",
-        creator: "DogeisCut",
+        name: 'Format Numbers',
+        description: 'Format large numbers into AD standard, fixed decimal, comma separated, or scientific notation.',
+        code: 'DogeisCut/FormatNumbers.js',
+        banner: 'DogeisCut/FormatNumbers.png',
+        creator: 'DogeisCut',
         isGitHub: true,
-        notes: "Gallery banner by Dillon"
+        notes: 'Gallery banner by Dillon'
       }, {
-        name: "Yet Another String Extension",
-        description: "A small collection of utilty blocks intended to make managing strings much, much easier.",
-        code: "DogeisCut/YetAnotherStringExtension.js",
-        banner: "DogeisCut/YetAnotherStringExtension.svg",
-        creator: "DogeisCut",
+        name: 'Yet Another String Extension',
+        description: 'A small collection of utilty blocks intended to make managing strings much, much easier.',
+        code: 'DogeisCut/YetAnotherStringExtension.js',
+        banner: 'DogeisCut/YetAnotherStringExtension.svg',
+        creator: 'DogeisCut',
         isGitHub: true
       }, {
-        name: "Random Utilities",
+        name: 'Random Utilities',
         description: "Many blocks related to generating random values, including seed-based number generation, true number generation, UUID's, random strings, etc.",
-        code: "Gen1x/random_utils.js",
-        banner: "Gen1x/randomutils.png",
-        creator: "G1nX"
+        code: 'Gen1x/random_utils.js',
+        banner: 'Gen1x/randomutils.png',
+        creator: 'G1nX'
       }, {
-        name: "Toast Notifications",
-        description: "Did you want alerts? Notifications that are easily customizable? This is the only and best notification extension!",
-        code: "MubiLop/toastnotifs.js",
-        banner: "MubiLop/toastnotifs.png",
-        creator: "cicerorph",
-        creatorAlias: "MubiLop",
-        notes: "Additional code by themeatly2 and ddededodediamante",
+        name: 'Toast Notifications',
+        description: 'Did you want alerts? Notifications that are easily customizable? This is the only and best notification extension!',
+        code: 'MubiLop/toastnotifs.js',
+        banner: 'MubiLop/toastnotifs.png',
+        creator: 'cicerorph',
+        creatorAlias: 'MubiLop',
+        notes: 'Additional code by themeatly2 and ddededodediamante',
         isGitHub: true
       }, {
-        name: "Project Interfaces",
-        description: "Effortlessly create intuitive graphical user interfaces in your projects.",
-        code: "LordCat0/ProjectInterfaces.js",
-        banner: "LordCat0/ProjectInterfaces.png",
-        creator: "LordCat0",
-        creatorAlias: "Lord cat",
-        notes: "Gallery banner by Dillon",
+        name: 'Project Interfaces',
+        description: 'Effortlessly create intuitive graphical user interfaces in your projects.',
+        code: 'LordCat0/ProjectInterfaces.js',
+        banner: 'LordCat0/ProjectInterfaces.png',
+        creator: 'LordCat0',
+        creatorAlias: 'Lord cat',
+        notes: 'Gallery banner by Dillon',
         isGitHub: true
       }, {
-        name: "Git Penguin",
-        description: "Make requests and control the files for your GitHub repository.",
-        code: "justablock/gitpenguin.js",
-        banner: "justablock/gitpenguin.png",
-        creator: "justablock",
+        name: 'Git Penguin',
+        description: 'Make requests and control the files for your GitHub repository.',
+        code: 'justablock/gitpenguin.js',
+        banner: 'justablock/gitpenguin.png',
+        creator: 'justablock',
         isGitHub: false
       }, {
-        name: "Pang API",
-        description: "Fetch information from the PenguinMod API.",
-        code: "SammerLOL/pangapi.js",
-        banner: "SammerLOL/pangapi.png",
-        creator: "oc9x97",
+        name: 'Pang API',
+        description: 'Fetch information from the PenguinMod API.',
+        code: 'SammerLOL/pangapi.js',
+        banner: 'SammerLOL/pangapi.png',
+        creator: 'oc9x97',
         isGitHub: true
       }, {
-        name: "TurboWeather",
-        description: "Show weather and location data for any place in our world. Data that could be used for doxxing is deleted from results.",
-        code: "RubyDevs/turboweather.js",
-        banner: "RubyDevs/turboweather.webp",
-        documentation: "TurboWeather",
-        creator: "RubyDevs"
+        name: 'TurboWeather',
+        description: 'Show weather and location data for any place in our world. Data that could be used for doxxing is deleted from results.',
+        code: 'RubyDevs/turboweather.js',
+        banner: 'RubyDevs/turboweather.webp',
+        documentation: 'TurboWeather',
+        creator: 'RubyDevs'
       }, {
-        name: "Cockatiel Location",
+        name: 'Cockatiel Location',
         description: "Fetch Users' IP Addresses and Location.",
-        code: "bruhbeast-pixel/CockatielLocation.js",
-        banner: "bruhbeast-pixel/CockatielLocation.svg",
-        creator: "bruhbeast-pixel",
+        code: 'bruhbeast-pixel/CockatielLocation.js',
+        banner: 'bruhbeast-pixel/CockatielLocation.svg',
+        creator: 'bruhbeast-pixel',
         isGitHub: true
       }, {
-        name: "CORS Proxy",
-        description: "Accessible CORS Proxies for fetching information with PenguinMod.",
-        code: "NamelessCat/corsproxy.js",
-        banner: "NamelessCat/corsproxy.png",
-        creator: "NamelessCat"
+        name: 'CORS Proxy',
+        description: 'Accessible CORS Proxies for fetching information with PenguinMod.',
+        code: 'NamelessCat/corsproxy.js',
+        banner: 'NamelessCat/corsproxy.png',
+        creator: 'NamelessCat'
       }, {
-        name: "Extension Exposer",
-        description: "Access the raw functions from other extensions.",
-        code: "TheShovel/extexp.js",
-        banner: "TheShovel/placeholder-extexp.png",
-        creator: "TheShovel",
+        name: 'Extension Exposer',
+        description: 'Access the raw functions from other extensions.',
+        code: 'TheShovel/extexp.js',
+        banner: 'TheShovel/placeholder-extexp.png',
+        creator: 'TheShovel',
         isGitHub: true,
-        note: "Some contributions by yuri-kiss :P"
+        note: 'Some contributions by yuri-kiss :P'
       }, {
-        name: "Project Page",
-        description: "Modify and affect the studio project page from the code. How annoying can an extension possibly be?",
-        code: "jwklong/projectpage.js",
-        banner: "jwklong/projectpage.png",
-        creator: "jwklong",
+        name: 'Project Page',
+        description: 'Modify and affect the studio project page from the code. How annoying can an extension possibly be?',
+        code: 'jwklong/projectpage.js',
+        banner: 'jwklong/projectpage.png',
+        creator: 'jwklong',
         isGitHub: true
       }, {
-        name: "All Menus",
-        description: "Every dropdown menu for each block, in one extension.",
-        code: "Lily/AllMenus.js",
-        banner: "Lily/AllMenus.svg",
-        creator: "LilyMakesThings",
+        name: 'All Menus',
+        description: 'Every dropdown menu for each block, in one extension.',
+        code: 'Lily/AllMenus.js',
+        banner: 'Lily/AllMenus.svg',
+        creator: 'LilyMakesThings',
         isGitHub: false
       }, {
-        name: "More Fields",
-        description: "Custom Field Types",
-        code: "Ashime/MoreFields.js",
-        banner: "0znzw/MoreFields.png",
-        creator: "yuri-kiss",
+        name: 'More Fields',
+        description: 'Custom Field Types',
+        code: 'Ashime/MoreFields.js',
+        banner: '0znzw/MoreFields.png',
+        creator: 'yuri-kiss',
         isGitHub: true
       }, {
-        name: "Beepbox Player",
-        description: "Play, edit, and read songs from any BeepBox mod directly from the URL or JSON!",
-        code: "DogeisCut/BeepBoxPlayer.js",
-        banner: "DogeisCut/BeepBoxPlayer.svg",
-        creator: "DogeisCut",
+        name: 'Beepbox Player',
+        description: 'Play, edit, and read songs from any BeepBox mod directly from the URL or JSON!',
+        code: 'DogeisCut/BeepBoxPlayer.js',
+        banner: 'DogeisCut/BeepBoxPlayer.svg',
+        creator: 'DogeisCut',
         isGitHub: true
       }, {
-        name: "Update File (Direct Access)",
-        description: "A simple extension that uses the File System Access API to update files dynamically.",
-        code: "Anonymous_cat1/updateFile.js",
-        banner: "Anonymous_cat1/updateFile.svg",
-        creator: "Anonymous-cat1",
+        name: 'Update File (Direct Access)',
+        description: 'A simple extension that uses the File System Access API to update files dynamically.',
+        code: 'Anonymous_cat1/updateFile.js',
+        banner: 'Anonymous_cat1/updateFile.svg',
+        creator: 'Anonymous-cat1',
         isGitHub: true,
         unstable: true,
-        unstableReason: "File System Access is not supported by all browsers.\nProjects can maliciously edit files that you open."
+        unstableReason: 'File System Access is not supported by all browsers.\nProjects can maliciously edit files that you open.'
       }, {
-        name: "File Upload",
-        description: "Upload files to the Network, can also used with Files extension.",
-        code: "Codefoxy/cfupload.js",
-        banner: "Codefoxy/cfupload.svg",
-        creator: "Codefoxy",
+        name: 'File Upload',
+        description: 'Upload files to the Network, can also used with Files extension.',
+        code: 'Codefoxy/cfupload.js',
+        banner: 'Codefoxy/cfupload.svg',
+        creator: 'Codefoxy',
         isGitHub: false
       }, {
-        name: "Video Sharing",
-        description: "Share your screen or camera to your projects!",
-        code: "pooiod/VideoSharing.js",
-        banner: "pooiod/VideoSharing.svg",
-        creator: "pooiod7",
+        name: 'Video Sharing',
+        description: 'Share your screen or camera to your projects!',
+        code: 'pooiod/VideoSharing.js',
+        banner: 'pooiod/VideoSharing.svg',
+        creator: 'pooiod7',
         isGitHub: false
       }, {
-        name: "WindowHasher",
-        description: "Interact with URL hash: the part of the URL after a hashtag",
-        code: "pooiod/WindowHasher.js",
-        banner: "pooiod/WindowHasher.png",
-        creator: "pooiod7"
+        name: 'WindowHasher',
+        description: 'Interact with URL hash: the part of the URL after a hashtag',
+        code: 'pooiod/WindowHasher.js',
+        banner: 'pooiod/WindowHasher.png',
+        creator: 'pooiod7'
       }, {
-        name: "Scratchblocks",
-        description: "Generate blocks in the Scratch3, or Scratch2 format.",
-        code: "pooiod/Scratchblocks.js",
-        banner: "pooiod/Scratchblocks.svg",
-        creator: "pooiod7"
+        name: 'Scratchblocks',
+        description: 'Generate blocks in the Scratch3, or Scratch2 format.',
+        code: 'pooiod/Scratchblocks.js',
+        banner: 'pooiod/Scratchblocks.svg',
+        creator: 'pooiod7'
       }, {
-        name: "AuthPenguin",
-        description: "Authenticate with anything and everything!",
-        code: "MubiLop/authpenguin.js",
-        banner: "MubiLop/authpenguin.png",
-        creator: "cicerorph",
-        creatorAlias: "MubiLop",
-        documentation: "AuthPenguin",
+        name: 'AuthPenguin',
+        description: 'Authenticate with anything and everything!',
+        code: 'MubiLop/authpenguin.js',
+        banner: 'MubiLop/authpenguin.png',
+        creator: 'cicerorph',
+        creatorAlias: 'MubiLop',
+        documentation: 'AuthPenguin',
         isGitHub: true
       }, {
-        name: "Google Auth",
-        description: "Login with Google to your projects. Allows getting a name, profile picture and email from the google account.",
-        code: "Ikelene/googleAuthExtension.js",
-        banner: "Ikelene/ExtensionBanner.png",
-        creator: "ikelene",
-        creatorAlias: "Ikelene",
+        name: 'Google Auth',
+        description: 'Login with Google to your projects. Allows getting a name, profile picture and email from the google account.',
+        code: 'Ikelene/googleAuthExtension.js',
+        banner: 'Ikelene/ExtensionBanner.png',
+        creator: 'ikelene',
+        creatorAlias: 'Ikelene',
         isGitHub: true
       }, {
-        name: "Discord Auth",
-        description: "Login with discord to your projects. Identify users by ID and username in a secure and easy way!",
-        code: "NotHouse/DiscordAuth.js",
-        banner: "NotHouse/DiscordAuth-banner.png",
-        creator: "enderhacker",
+        name: 'Discord Auth',
+        description: 'Login with discord to your projects. Identify users by ID and username in a secure and easy way!',
+        code: 'NotHouse/DiscordAuth.js',
+        banner: 'NotHouse/DiscordAuth-banner.png',
+        creator: 'enderhacker',
         isGitHub: true
       }, {
-        name: "Twitch",
-        description: "Communicate with your Twitch Chat on PenguinMod!\n\nPenguinMod is not affiliated with Twitch.",
-        code: "bop_tw/Twitch.js",
-        banner: "bop_tw/Twitch.png",
-        creator: "bop_tw",
+        name: 'Twitch',
+        description: 'Communicate with your Twitch Chat on PenguinMod!\n\nPenguinMod is not affiliated with Twitch.',
+        code: 'bop_tw/Twitch.js',
+        banner: 'bop_tw/Twitch.png',
+        creator: 'bop_tw',
         isGitHub: false
       }, {
-        name: "Chess",
-        description: "A powerful extension about Chess. It allows to create a Chessboard, manage chess games, and use Stockfish 17 in your projects.",
-        code: "Gen1x/chess-ext.js",
-        banner: "Gen1x/chess-ext.png",
-        creator: "G1nX",
+        name: 'Chess',
+        description: 'A powerful extension about Chess. It allows to create a Chessboard, manage chess games, and use Stockfish 17 in your projects.',
+        code: 'Gen1x/chess-ext.js',
+        banner: 'Gen1x/chess-ext.png',
+        creator: 'G1nX',
         isGitHub: false
       }, {
-        name: "CATS",
-        description: "Blocks related to cats.",
-        code: "Gen1x/CATS.js",
-        banner: "Gen1x/cats.png",
-        creator: "G1nX"
+        name: 'CATS',
+        description: 'Blocks related to cats.',
+        code: 'Gen1x/CATS.js',
+        banner: 'Gen1x/cats.png',
+        creator: 'G1nX'
       }, {
-        name: "Free Servers",
-        description: "Here you can find a free server for your projects. And also check whether it is working now or not.\n\nЗдесь вы можете найти бесплатный сервер для своих проектов. А также проверить, работает он сейчас или нет.",
-        code: "WAYLIVES/FreeServers.js",
-        banner: "WAYLIVES/FreeServersIMG.svg",
-        documentation: "FreeServers",
-        creator: "WAYLIVES",
+        name: 'Free Servers',
+        description: 'Here you can find a free server for your projects. And also check whether it is working now or not.\n\nЗдесь вы можете найти бесплатный сервер для своих проектов. А также проверить, работает он сейчас или нет.',
+        code: 'WAYLIVES/FreeServers.js',
+        banner: 'WAYLIVES/FreeServersIMG.svg',
+        documentation: 'FreeServers',
+        creator: 'WAYLIVES',
         isGitHub: false
       }, {
-        name: "More Types",
-        description: "Adds more value types to PenguinMod, implementing Functions, Objects, Arrays, Sets, Maps, Symbols and Nothing.",
-        code: "VeryGoodScratcher42/More-Types.js",
-        banner: "VeryGoodScratcher42/More-Types.png",
-        creator: "VeryGoodScratcher42",
+        name: 'More Types',
+        description: 'Adds more value types to PenguinMod, implementing Functions, Objects, Arrays, Sets, Maps, Symbols and Nothing.',
+        code: 'VeryGoodScratcher42/More-Types.js',
+        banner: 'VeryGoodScratcher42/More-Types.png',
+        creator: 'VeryGoodScratcher42',
         isGitHub: false
       }, {
-        name: "oneko",
-        description: "Cute cat that follows you on the block area.",
-        code: "TheShovel/oneko.js",
-        banner: "TheShovel/thumbnail-oneko.png",
-        creator: "TheShovel",
+        name: 'oneko',
+        description: 'Cute cat that follows you on the block area.',
+        code: 'TheShovel/oneko.js',
+        banner: 'TheShovel/thumbnail-oneko.png',
+        creator: 'TheShovel',
         isGitHub: true
       }, {
-        name: "Counter++",
-        description: "Count anything, at any time, in PenguinMod!",
-        code: "MrRedstonia/counterplusplus.js",
-        banner: "MrRedstonia/counterplusplus.png",
-        creator: "MrRedstonia",
+        name: 'Counter++',
+        description: 'Count anything, at any time, in PenguinMod!',
+        code: 'MrRedstonia/counterplusplus.js',
+        banner: 'MrRedstonia/counterplusplus.png',
+        creator: 'MrRedstonia',
         isGitHub: true
       }, {
-        name: "How many lines?",
-        description: "Blocks to determine the amount of new lines in a piece of text.",
-        code: "Monochromasity/howmanylines.js",
-        banner: "Monochromasity/placeholder-howmanylines.png",
-        creator: "Monochromasity",
+        name: 'How many lines?',
+        description: 'Blocks to determine the amount of new lines in a piece of text.',
+        code: 'Monochromasity/howmanylines.js',
+        banner: 'Monochromasity/placeholder-howmanylines.png',
+        creator: 'Monochromasity',
         isGitHub: true
       }, {
-        name: "Paint Utils",
-        description: "A colour extension that lets you mix colours.",
-        code: "Fruits555000/PaintUtils.js",
-        banner: "Fruits555000/PaintUtils.svg",
-        creator: "Fruits555000",
+        name: 'Paint Utils',
+        description: 'A colour extension that lets you mix colours.',
+        code: 'Fruits555000/PaintUtils.js',
+        banner: 'Fruits555000/PaintUtils.svg',
+        creator: 'Fruits555000',
         isGitHub: true
       }, {
-        name: "Resolution",
-        description: "Provides utility blocks that simplify the creation of projects with dynamic resolution support.",
-        code: "DogeisCut/Resolution.js",
-        banner: "DogeisCut/Resolution.svg",
-        creator: "DogeisCut",
+        name: 'Resolution',
+        description: 'Provides utility blocks that simplify the creation of projects with dynamic resolution support.',
+        code: 'DogeisCut/Resolution.js',
+        banner: 'DogeisCut/Resolution.svg',
+        creator: 'DogeisCut',
         isGitHub: true,
-        documentation: "Resolution",
-        notes: "Gallery banner by Dillon"
+        documentation: 'Resolution',
+        notes: 'Gallery banner by Dillon'
       }, {
-        name: "Device Motion",
-        description: "Use Device Motion API to get rotation or movement of the device. Works best on mobile devices. \n Thumbnail by Dillon. ",
-        code: "gaimerI17/DeviceMotion.js",
-        banner: "gaimerI17/DeviceMotion.png",
-        creator: "gaimerI",
+        name: 'Device Motion',
+        description: 'Use Device Motion API to get rotation or movement of the device. Works best on mobile devices. \n Thumbnail by Dillon. ',
+        code: 'gaimerI17/DeviceMotion.js',
+        banner: 'gaimerI17/DeviceMotion.png',
+        creator: 'gaimerI',
         isGitHub: true,
-        creatorAlias: "gaimerI17",
-        note: "Extension thumbnail made by Dillon."
+        creatorAlias: 'gaimerI17',
+        note: 'Extension thumbnail made by Dillon.'
       }]
     };
     return data.extensions.map(extension => ({
@@ -31417,8 +31992,8 @@ class StageHeader extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component
   }
 
   /**
-       * 触发坐标网格的显示 or 隐藏
-       */
+   * 触发坐标网格的显示 or 隐藏
+   */
   handleTriggerCoordinate() {
     const visible = !this.state.isShowCoordinate;
     this.props.vm.runtime.triggerCoordinate(visible);
@@ -31638,7 +32213,7 @@ class StageSelector extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Compone
   async handleEmptyBackdrop(e) {
     e.stopPropagation(); // Prevent click from falling through to stage selector, select it manually below
     this.props.vm.setEditingTarget(this.props.id);
-    console.log("add back");
+    console.log('add back');
     function base64ToUint8Array(base64String) {
       const padding = '='.repeat((4 - base64String.length % 4) % 4);
       const base64 = (base64String + padding).replace(/\-/g, '+').replace(/_/g, '/');
@@ -31656,12 +32231,12 @@ class StageSelector extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Compone
       index: 1
     });
 
-    //const res =base64ToUint8Array('PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIwIiBoZWlnaHQ9IjAiIHZpZXdCb3g9IjAgMCAwIDAiPgogIDwhLS0gRXhwb3J0ZWQgYnkgU2NyYXRjaCAtIGh0dHA6Ly9zY3JhdGNoLm1pdC5lZHUvIC0tPgo8L3N2Zz4=');
-    //const blob = await res.blob();
+    // const res =base64ToUint8Array('PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIwIiBoZWlnaHQ9IjAiIHZpZXdCb3g9IjAgMCAwIDAiPgogIDwhLS0gRXhwb3J0ZWQgYnkgU2NyYXRjaCAtIGh0dHA6Ly9zY3JhdGNoLm1pdC5lZHUvIC0tPgo8L3N2Zz4=');
+    // const blob = await res.blob();
 
-    /*if (!(this._typeIsBitmap(blob.type) || blob.type === "image/svg+xml")) {
-      console.error(`Invalid MIME type: ${blob.type}`);
-      return;
+    /* if (!(this._typeIsBitmap(blob.type) || blob.type === "image/svg+xml")) {
+    console.error(`Invalid MIME type: ${blob.type}`);
+    return;
     }*/
     const assetType = runtime.storage.AssetType.ImageVector;
 
@@ -31670,12 +32245,12 @@ class StageSelector extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Compone
     // (https://github.com/scratchfoundation/scratch-parser/blob/665f05d739a202d565a4af70a201909393d456b2/lib/sb3_definitions.json#L51)
     const dataType = runtime.storage.DataFormat.SVG;
 
-    /*const arrayBuffer = await new Promise((resolve, reject) => {
-      const fr = new FileReader();
-      fr.onload = () => resolve(fr.result);
-      fr.onerror = () =>
-        reject(new Error(`Failed to read as array buffer: ${fr.error}`));
-      fr.readAsArrayBuffer(blob);
+    /* const arrayBuffer = await new Promise((resolve, reject) => {
+    const fr = new FileReader();
+    fr.onload = () => resolve(fr.result);
+    fr.onerror = () =>
+      reject(new Error(`Failed to read as array buffer: ${fr.error}`));
+    fr.readAsArrayBuffer(blob);
     });*/
 
     const asset = runtime.storage.createAsset(assetType, dataType, base64ToUint8Array('PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIwIiBoZWlnaHQ9IjAiIHZpZXdCb3g9IjAgMCAwIDAiPgogIDwhLS0gRXhwb3J0ZWQgYnkgU2NyYXRjaCAtIGh0dHA6Ly9zY3JhdGNoLm1pdC5lZHUvIC0tPgo8L3N2Zz4='), null, true);
@@ -31690,7 +32265,7 @@ class StageSelector extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Compone
       console.error(e);
     }
 
-    //this.handleNewBackdrop(emptyCostume(this.props.intl.formatMessage(sharedMessages.backdrop, {index: 1})));
+    // this.handleNewBackdrop(emptyCostume(this.props.intl.formatMessage(sharedMessages.backdrop, {index: 1})));
   }
   handleBackdropUpload(e) {
     const vm = this.props.vm;
@@ -32648,8 +33223,8 @@ class TargetPane extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component 
         formatMessage(sharedMessages.costume, {index: 1})
     );
     */
-    //this.props.vm.addSprite(JSON.stringify(emptyItem)).then(() => {
-    const empt = "UEsDBAoAAAAIAPtDEFvpQGoKHgEAAMUBAAALAAAAc3ByaXRlLmpzb26NkcFKxDAQhl9F5lykbey67XVB8OpeFPEwadISTBtJ0rJrKXgVbz6AePPuOwnrWzjptog3b/NPvpl/ZjKAcluPtYSiQu1kBC02JODw8Xp4/kwggh6tQq6lg2IYI9DK+Tnk1qAo8VdrU97PcWmaRrbLS9lZS2pjnO9C+zgAU0zA7bCYfj+9f729BFOufIMPV9IZ3XllWiiSCAR6vDC2QU+s62vi0DnpLwVpxliOaZ4xZLxapZyvY5mdVVV2ngleSkFwIzK58/9gT4/NrfEYzDc0urTX09h/czeUG+8icKZrRViF4p5GDtskMeG9copuB4W3HR13BwVbRbCHIl1TlXpcOKGsLI+L5kFarGucCudvWXy3fh+ygFqfoA22MP4AUEsDBAoAAAAIAPtDEFtvxALBkgAAAMgAAAAkAAAAMzMzOWEyOTUzYTNiZjYyYmI4MGU1NGZmNTc1ZGJjZWQuc3ZnbY5NDoIwFIT3nOL59v1BVxBgQeIJPIHShjYCJe2zrbcXwaWZzWTmS2aaEEfI87SEFg3RWguRUuLpwp0fxVlKKTYCD6TOk12e/8CyqiqxtwhR+2Dd0mLJS4RkFZkWJYLRdjS022h16l3ePOzCrgBoTozBNa/Ok1bweMNt8HcaDDD4DYYj4LMlrtVLAGNd0XwPdh9QSwECFAAKAAAACAD7QxBb6UBqCh4BAADFAQAACwAAAAAAAAAAAAAAAAAAAAAAc3ByaXRlLmpzb25QSwECFAAKAAAACAD7QxBbb8QCwZIAAADIAAAAJAAAAAAAAAAAAAAAAABHAQAAMzMzOWEyOTUzYTNiZjYyYmI4MGU1NGZmNTc1ZGJjZWQuc3ZnUEsFBgAAAAACAAIAiwAAABsCAAAAAA==";
+    // this.props.vm.addSprite(JSON.stringify(emptyItem)).then(() => {
+    const empt = 'UEsDBAoAAAAIAPtDEFvpQGoKHgEAAMUBAAALAAAAc3ByaXRlLmpzb26NkcFKxDAQhl9F5lykbey67XVB8OpeFPEwadISTBtJ0rJrKXgVbz6AePPuOwnrWzjptog3b/NPvpl/ZjKAcluPtYSiQu1kBC02JODw8Xp4/kwggh6tQq6lg2IYI9DK+Tnk1qAo8VdrU97PcWmaRrbLS9lZS2pjnO9C+zgAU0zA7bCYfj+9f729BFOufIMPV9IZ3XllWiiSCAR6vDC2QU+s62vi0DnpLwVpxliOaZ4xZLxapZyvY5mdVVV2ngleSkFwIzK58/9gT4/NrfEYzDc0urTX09h/czeUG+8icKZrRViF4p5GDtskMeG9copuB4W3HR13BwVbRbCHIl1TlXpcOKGsLI+L5kFarGucCudvWXy3fh+ygFqfoA22MP4AUEsDBAoAAAAIAPtDEFtvxALBkgAAAMgAAAAkAAAAMzMzOWEyOTUzYTNiZjYyYmI4MGU1NGZmNTc1ZGJjZWQuc3ZnbY5NDoIwFIT3nOL59v1BVxBgQeIJPIHShjYCJe2zrbcXwaWZzWTmS2aaEEfI87SEFg3RWguRUuLpwp0fxVlKKTYCD6TOk12e/8CyqiqxtwhR+2Dd0mLJS4RkFZkWJYLRdjS022h16l3ePOzCrgBoTozBNa/Ok1bweMNt8HcaDDD4DYYj4LMlrtVLAGNd0XwPdh9QSwECFAAKAAAACAD7QxBb6UBqCh4BAADFAQAACwAAAAAAAAAAAAAAAAAAAAAAc3ByaXRlLmpzb25QSwECFAAKAAAACAD7QxBbb8QCwZIAAADIAAAAJAAAAAAAAAAAAAAAAABHAQAAMzMzOWEyOTUzYTNiZjYyYmI4MGU1NGZmNTc1ZGJjZWQuc3ZnUEsFBgAAAAACAAIAiwAAABsCAAAAAA==';
     this.props.vm.addSprite(base64ToUint8Array(empt)).then(() => {
       setTimeout(() => {
         // Wait for targets update to propagate before tab switching
@@ -36734,6 +37309,150 @@ const jpegThumbnail = dataUrl => new Promise((resolve, reject) => {
 
 /***/ }),
 
+/***/ "./src/lib/block-disable-extensions.js":
+/*!*********************************************!*\
+  !*** ./src/lib/block-disable-extensions.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _addons_contextmenu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../addons/contextmenu */ "./src/addons/contextmenu.js");
+/* harmony import */ var _vm_block_disable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./vm-block-disable */ "./src/lib/vm-block-disable.js");
+
+
+let blockDisableExtensionInitialized = false;
+let vmBlockDisableManager = null;
+const initializeBlockDisableExtension = vm => {
+  if (blockDisableExtensionInitialized) return;
+  blockDisableExtensionInitialized = true;
+
+  // Initialize VM block disable manager
+  vmBlockDisableManager = new _vm_block_disable__WEBPACK_IMPORTED_MODULE_1__["default"](vm);
+
+  // Add context menu item for blocks using addons API
+  // Add context menu item for blocks using addons API
+  if (window.addon && window.addon.tab && window.addon.tab.createBlockContextMenu) {
+    window.addon.tab.createBlockContextMenu((items, ctx) => {
+      if (!ctx || !ctx.block) return items;
+      const isDisabled = vm.getBlockDisabledState && vm.getBlockDisabledState(ctx.block.id);
+      items.push({
+        text: isDisabled ? 'Enable Block' : 'Disable Block',
+        callback: () => {
+          const newDisabledState = !isDisabled;
+          if (vm.setBlockDisabledState) {
+            vm.setBlockDisabledState(ctx.block.id, newDisabledState);
+
+            // Update visual appearance
+            if (ctx.block.setDisabled) {
+              ctx.block.setDisabled(newDisabledState);
+            }
+
+            // Recursively update child blocks
+            const updateBlockTree = (block, disabled) => {
+              if (block && block.setDisabled) {
+                block.setDisabled(disabled);
+              }
+              if (block && block.getChildren) {
+                block.getChildren().forEach(child => {
+                  if (child instanceof Blockly.Block) {
+                    updateBlockTree(child, disabled);
+                  }
+                });
+              }
+            };
+            updateBlockTree(ctx.block, newDisabledState);
+            if (ctx.block.workspace && ctx.block.workspace.render) {
+              ctx.block.workspace.render();
+            }
+          }
+        },
+        separator: true
+      });
+      return items;
+    }, {
+      blocks: true
+    });
+  } else {
+    // Fallback: Use direct context menu patching
+    console.warn('Addon API not available, using fallback block disable menu');
+
+    // Patch Blockly context menu directly
+    if (window.Blockly && Blockly.ContextMenu && Blockly.ContextMenu.show && typeof Blockly.ContextMenu.show === 'function') {
+      const originalShow = Blockly.ContextMenu.show;
+      Blockly.ContextMenu.show = function (event, items, rtl) {
+        const gesture = Blockly.mainWorkspace && Blockly.mainWorkspace.currentGesture_;
+        const block = gesture && gesture.targetBlock_;
+        if (block) {
+          const isDisabled = vm.getBlockDisabledState && vm.getBlockDisabledState(block.id);
+          items.push({
+            text: isDisabled ? 'Enable Block' : 'Disable Block',
+            callback: () => {
+              const newDisabledState = !isDisabled;
+              if (vm.setBlockDisabledState) {
+                vm.setBlockDisabledState(block.id, newDisabledState);
+                if (block.setDisabled) {
+                  block.setDisabled(newDisabledState);
+                }
+                if (block.workspace && block.workspace.render) {
+                  block.workspace.render();
+                }
+              }
+            },
+            separator: true
+          });
+        }
+        return originalShow.call(this, event, items, rtl);
+      };
+    }
+  }
+
+  // Patch Blockly to add disabled visual styling
+  if (window.addon) {
+    window.addon.tab.traps.getBlockly().then(ScratchBlocks => {
+      const originalRender = ScratchBlocks.BlockSvg.prototype.render;
+      ScratchBlocks.BlockSvg.prototype.render = function () {
+        originalRender.call(this);
+        const isDisabled = vm.getBlockDisabledState && vm.getBlockDisabledState(this.id);
+        if (isDisabled) {
+          this.svgPath_.setAttribute('fill-opacity', '0.5');
+          this.svgPath_.setAttribute('stroke-opacity', '0.5');
+
+          // Gray out all text elements
+          const textElements = this.svgGroup_.querySelectorAll('text');
+          textElements.forEach(text => {
+            text.setAttribute('fill', '#888');
+          });
+        } else {
+          this.svgPath_.removeAttribute('fill-opacity');
+          this.svgPath_.removeAttribute('stroke-opacity');
+
+          // Restore original text colors
+          const textElements = this.svgGroup_.querySelectorAll('text');
+          textElements.forEach(text => {
+            text.removeAttribute('fill');
+          });
+        }
+      };
+
+      // Add isDisabled property to blocks
+      ScratchBlocks.BlockSvg.prototype.setDisabled = function (disabled) {
+        if (vm.setBlockDisabledState) {
+          vm.setBlockDisabledState(this.id, disabled);
+        }
+        this.render();
+      };
+      ScratchBlocks.BlockSvg.prototype.getDisabled = function () {
+        return vm.getBlockDisabledState && vm.getBlockDisabledState(this.id) || false;
+      };
+    });
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = (initializeBlockDisableExtension);
+
+/***/ }),
+
 /***/ "./src/lib/blocks.js":
 /*!***************************!*\
   !*** ./src/lib/blocks.js ***!
@@ -38328,7 +39047,7 @@ __webpack_require__.r(__webpack_exports__);
 const emptyCostume = name => ({
   name: name,
   md5: 'cd21514d0531fdffb22204e0ec5ed84a.svg',
-  //assetId:'cd21514d0531fdffb22204e0ec5ed84a.svg',
+  // assetId:'cd21514d0531fdffb22204e0ec5ed84a.svg',
   rotationCenterX: 0,
   rotationCenterY: 0,
   bitmapResolution: 1,
@@ -38350,7 +39069,7 @@ const emptySprite = (name, soundName, costumeName) => ({
     costumeName: costumeName,
     baseLayerID: -1,
     baseLayerMD5: 'cd21514d0531fdffb22204e0ec5ed84a.svg',
-    //assetId:'cd21514d0531fdffb22204e0ec5ed84a.svg',
+    // assetId:'cd21514d0531fdffb22204e0ec5ed84a.svg',
     bitmapResolution: 1,
     rotationCenterX: 0,
     rotationCenterY: 0
@@ -41213,7 +41932,7 @@ const ProjectFetcherHOC = function ProjectFetcherHOC(WrappedComponent) {
             data: buffer
           }));
         }
-        console.log("project", projectId);
+        console.log('project', projectId);
       }
       return assetPromise.then(projectAsset => {
         if (projectAsset) {
@@ -46620,6 +47339,85 @@ class VideoProvider {
   }
 }
 /* harmony default export */ __webpack_exports__["default"] = (VideoProvider);
+
+/***/ }),
+
+/***/ "./src/lib/vm-block-disable.js":
+/*!*************************************!*\
+  !*** ./src/lib/vm-block-disable.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+class VMBlockDisableManager {
+  constructor(vm) {
+    this.vm = vm;
+    this.disabledBlocks = new Set();
+
+    // Patch VM to handle disabled blocks
+    this.patchVM();
+  }
+  patchVM() {
+    const originalStepThreads = this.vm.runtime.sequencer.stepThreads;
+    const self = this;
+    this.vm.runtime.sequencer.stepThreads = function (threads) {
+      if (!threads || !Array.isArray(threads)) {
+        return originalStepThreads.call(this, threads);
+      }
+      const activeThreads = threads.filter(thread => {
+        if (self.isBlockDisabled(thread.topBlock)) {
+          return false;
+        }
+        return true;
+      });
+      return originalStepThreads.call(this, activeThreads);
+    };
+
+    // Add methods to VM
+    this.vm.setBlockDisabledState = (blockId, disabled) => {
+      if (disabled) {
+        this.disabledBlocks.add(blockId);
+      } else {
+        this.disabledBlocks.delete(blockId);
+      }
+    };
+    this.vm.getBlockDisabledState = blockId => this.disabledBlocks.has(blockId);
+    this.vm.clearAllDisabledBlocks = () => {
+      this.disabledBlocks.clear();
+    };
+  }
+  isBlockDisabled(block) {
+    if (!block) return false;
+
+    // Check if this block is disabled
+    if (this.disabledBlocks.has(block.id)) {
+      return true;
+    }
+
+    // Check if any parent block is disabled
+    let parent = block.getParent();
+    while (parent) {
+      if (this.disabledBlocks.has(parent.id)) {
+        return true;
+      }
+      parent = parent.getParent();
+    }
+    return false;
+  }
+
+  // Recursively disable/enable a block and all its children
+  setBlockTreeDisabled(block, disabled) {
+    this.vm.setBlockDisabledState(block.id, disabled);
+    block.getChildren().forEach(child => {
+      if (child instanceof Blockly.Block) {
+        this.setBlockTreeDisabled(child, disabled);
+      }
+    });
+  }
+}
+/* harmony default export */ __webpack_exports__["default"] = (VMBlockDisableManager);
 
 /***/ }),
 
